@@ -9,6 +9,13 @@ namespace Interdicilinar.Bichos
 {
     class Gato : Mamifero, IPredador
     {
+        public Gato()
+        {
+            QuantidadeMamas = 8;
+            Pelos = true;
+            Carnivoro = true;
+        }
+
         public void Ataque()
         {
             throw new NotImplementedException();
