@@ -9,5 +9,12 @@ namespace Interdicilinar.Bichos
 {
     public class Coruja:Ave
     {
+        public Coruja()
+        {
+            Rapina = true;
+            Carnivoro = true;
+
+
+        }
     }
 }

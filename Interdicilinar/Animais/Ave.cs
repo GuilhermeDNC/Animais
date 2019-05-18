@@ -8,20 +8,8 @@ namespace Interdicilinar.Animais
 {
     public abstract class Ave :Animal
     {
-        private bool rapina;
         private string corPena;
-        public bool Rapina
-        {
-            get
-            {
-                return rapina;
-            }
-            set
-            {
-                rapina = value;
-            }
-        }
-
+    
         public string CorPena
         {
             get
@@ -40,6 +28,8 @@ namespace Interdicilinar.Animais
                 }
             }
         }
+
+        public bool Rapina { get; set; }
 
         public void Ciscar() { }
     }
