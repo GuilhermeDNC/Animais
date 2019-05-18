@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Interdicilinar.Animais
+namespace Animais.Animais
 {
     public abstract class Ave :Animal
     {

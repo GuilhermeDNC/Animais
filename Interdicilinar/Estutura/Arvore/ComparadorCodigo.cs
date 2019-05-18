@@ -1,4 +1,4 @@
-﻿using Interdicilinar.Animais;
+﻿using Animais.Animais;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Interdicilinar.Estrutura.Arvore
+namespace Animais.Estrutura.Arvore
 {
     public class ComparadorCodigo : IComparer
     {

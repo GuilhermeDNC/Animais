@@ -1,9 +1,9 @@
-﻿using Interdicilinar.Animais;
+﻿using Animais.Animais;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Interdicilinar.Estrutura.Arvore
+namespace Animais.Estrutura.Arvore
 {
     public class Nodo
     {

@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Collections;
-using Interdicilinar.Logicas;
-using Interdicilinar.Animais;
-using Interdicilinar.Estrutura.Lista;
+using Animais.Logicas;
+using Animais.Animais;
+using Animais.Estrutura.Lista;
 
-namespace Interdicilinar.Estrutura.Arvore
+namespace Animais.Estrutura.Arvore
 {
     public class ArvoreBin
     {
