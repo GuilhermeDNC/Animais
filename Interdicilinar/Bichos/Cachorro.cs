@@ -9,5 +9,13 @@ namespace Interdicilinar.Bichos
 {
     public class Cachorro:Mamifero
     {
+        public Cachorro()
+        {
+            Carnivoro = true;
+            Pelos = true;
+            QuantidadeMamas = 8;
+            
+
+        }
     }
 }
