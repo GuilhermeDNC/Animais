@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Animais.Bichos
 {
-    public class Lobo : Mamifero, IPredador
+    public class Lobo : Cachorro, IPredador
     {
         public void Ataque()
         {
