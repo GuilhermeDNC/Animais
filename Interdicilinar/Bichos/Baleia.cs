@@ -9,6 +9,15 @@ namespace Interdicilinar.Bichos
 {
     public class Baleia : Mamifero, IAquatico
     {
+        public Baleia()
+        {
+            QuantidadeMamas = 0;
+            Pelos = false;
+            Carnivoro = true;
+            ViveEmAgua = true;
+            AguaDoce = false;
+
+        }
         public bool ViveEmAgua { get; set; }
         public bool Mergulho { get; set; }
         public bool AguaDoce { get; set; }
