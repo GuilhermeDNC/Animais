@@ -9,6 +9,11 @@ namespace Interdicilinar.Bichos
 {
     public class Gaviao : Ave, IPredador
     {
+        public Gaviao()
+        {
+            Rapina = true;
+            Carnivoro = true;
+        }
         public void Ataque()
         {
             throw new NotImplementedException();
