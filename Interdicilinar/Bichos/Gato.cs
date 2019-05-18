@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Animais.Bichos
 {
-    class Gato : Mamifero, IPredador
+    public class Gato : Mamifero, IPredador
     {
         public Gato()
         {

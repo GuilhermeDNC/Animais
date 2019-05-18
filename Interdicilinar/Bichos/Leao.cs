@@ -7,17 +7,8 @@ using System.Threading.Tasks;
 
 namespace Animais.Bichos
 {
-    public class Leao : Mamifero, IPredador
+    public class Leao : Gato
     {
-        public Leao()
-        {
-            QuantidadeMamas = 8;
-            Pelos = true;
-            Carnivoro = true;
-        }
-        public void Ataque()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
