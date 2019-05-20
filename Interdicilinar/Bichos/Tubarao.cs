@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Animais.Bichos
 {
-    public class Gato : Mamifero, IPredador
+    public class Tubarao : Animal, IAquatico,IPredador
     {
-        public Gato(string nome, string nascimento, char sexo, string corDoPelo)
+        public Tubarao(string nome, string nascimento, char sexo)
         {
             Nome = nome;
             try
@@ -21,15 +21,17 @@ namespace Animais.Bichos
                 throw new Exception("Data inválida!");
             }
             Sexo = sexo;
-            CorDoPelo = corDoPelo;
-            QuantidadeMamas = 8;
-            Pelos = true;
-            Carnivoro = true;
+            ViveEmAgua = true;
+            Mergulho = true;
+            AguaDoce = false;
         }
+        public bool ViveEmAgua { get; set; }
+        public bool Mergulho { get; set; }
+        public bool AguaDoce { get; set; }
 
         public void Ataque()
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

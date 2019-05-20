@@ -1,16 +1,39 @@
-﻿using Interdicilinar.Animais;
+﻿using Animais.Animais;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Interdicilinar.Bichos
+namespace Animais.Bichos
 {
-    public class Tartaruga : Animal, IAquatico
+    public class Tartaruga : Animal, IAquatico,IOviparo
     {
-        public bool ViveEmAgua { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public bool Mergulho { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public bool AguaDoce { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public Tartaruga(string nome, string nascimento, char sexo)
+        {
+            Nome = nome;
+            try
+            {
+                Nascimento = DateTime.Parse(nascimento);
+            }
+            catch
+            {
+                throw new Exception("Data inválida!");
+            }
+            Sexo = sexo;
+            ViveEmAgua = true;
+        }
+
+        public bool ViveEmAgua { get; set; }
+        public bool Mergulho { get; set; }
+        public bool AguaDoce { get; set; }
+
+        public void Botar()
+        {
+        }
+
+        public void Chocar()
+        {
+        }
     }
 }
