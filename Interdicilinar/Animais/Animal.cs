@@ -8,31 +8,12 @@ namespace Animais.Animais
 {
     public abstract class Animal
     {
-        private int codigo;
         private string nome;
         private DateTime nascimento;
         private char sexo;
         private bool carnivoro;
         private bool peconheto;
 
-        public int Codigo
-        {
-            get
-            {
-                return codigo;
-            }
-            set
-            {
-                if(value <= 0)
-                {
-                    throw new Exception("Código Invalido");
-                }
-                else
-                {
-                    codigo = value;
-                }
-            }
-        }
         public string Nome
         {
             get

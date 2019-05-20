@@ -9,9 +9,20 @@ namespace Animais.Bichos
 {
     public class Ornitorrinco : Mamifero, IAquatico, IOviparo
     {
-        public Ornitorrinco(char sexo)
+        public Ornitorrinco(string nome, string nascimento, char sexo, string corDoPelo)
         {
-            if(sexo == 'm')
+            Nome = nome;
+            try
+            {
+                Nascimento = DateTime.Parse(nascimento);
+            }
+            catch
+            {
+                throw new Exception("Data inválida!");
+            }
+            Sexo = sexo;
+            CorDoPelo = corDoPelo;
+            if (Sexo == 'm')
             {
                 Peconhento = true;
             }

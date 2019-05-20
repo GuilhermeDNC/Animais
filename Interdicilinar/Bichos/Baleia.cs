@@ -9,8 +9,19 @@ namespace Animais.Bichos
 {
     public class Baleia : Mamifero, IAquatico
     {
-        public Baleia()
+        public Baleia(string nome,string nascimento,char sexo)
         {
+            Nome = nome;
+            try
+            {
+                Nascimento = DateTime.Parse(nascimento);
+            }
+            catch
+            {
+                throw new Exception("Data inválida!");
+            }
+            Sexo = sexo;
+
             QuantidadeMamas = 0;
             Pelos = false;
             Carnivoro = true;

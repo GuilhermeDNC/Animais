@@ -9,5 +9,10 @@ namespace Animais.Bichos
 {
     public class Pombo:Ave
     {
+        public Pombo()
+        {
+            Rapina = false;
+            Carnivoro = false;
+        }
     }
 }

@@ -9,5 +9,10 @@ namespace Animais.Bichos
 {
     public class Pinguin:Ave
     {
+        public Pinguin()
+        {
+            Carnivoro = true;
+
+        }
     }
 }
