@@ -9,7 +9,6 @@ namespace Animais.Animais
     public abstract class Mamifero:Animal
     {
         private int quantidadeMamas;
-        private bool pelos;
         private string corDoPelo;
 
         public int QuantidadeMamas
@@ -31,23 +30,13 @@ namespace Animais.Animais
             }
         }
 
-        public bool Pelos
-        {
-            get
-            {
-                return pelos;
-            }
-            set
-            {
-                pelos = value;
-            }
-        }
+        public bool Pelos { get; set; }
 
         public string CorDoPelo
         {
             get
             {
-                if (!pelos)
+                if (!Pelos)
                 {
                     throw new Exception("O animal não tem pelo");
                 }

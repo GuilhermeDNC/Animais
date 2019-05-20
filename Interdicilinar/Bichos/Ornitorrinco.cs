@@ -9,18 +9,31 @@ namespace Animais.Bichos
 {
     public class Ornitorrinco : Mamifero, IAquatico, IOviparo
     {
-        public bool ViveEmAgua { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public bool Mergulho { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public bool AguaDoce { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public Ornitorrinco(char sexo)
+        {
+            if(sexo == 'm')
+            {
+                Peconhento = true;
+            }
+            ViveEmAgua = false;
+            AguaDoce = true;
+            Carnivoro = true;
+            Pelos = true;
+            Mergulho = true;
+            
+        }
+        public bool ViveEmAgua { get; set; }
+        public bool Mergulho { get; set; }
+        public bool AguaDoce { get; set ; }
 
         public void Botar()
         {
-            throw new NotImplementedException();
+            
         }
 
         public void Chocar()
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
