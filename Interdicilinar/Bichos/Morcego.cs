@@ -14,7 +14,7 @@ namespace Animais.Bichos
 
         public void Voar()
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
