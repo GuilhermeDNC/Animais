@@ -9,8 +9,19 @@ namespace Animais.Bichos
 {
     public class Pombo:Ave
     {
-        public Pombo()
+        public Pombo(string nome, string nascimento, char sexo, string corDPena)
         {
+            Nome = nome;
+            try
+            {
+                Nascimento = DateTime.Parse(nascimento);
+            }
+            catch
+            {
+                throw new Exception("Data inválida!");
+            }
+            Sexo = sexo;
+            CorPena = corDPena;
             Rapina = false;
             Carnivoro = false;
         }

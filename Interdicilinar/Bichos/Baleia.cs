@@ -27,6 +27,7 @@ namespace Animais.Bichos
             Carnivoro = true;
             ViveEmAgua = true;
             AguaDoce = false;
+            Mergulho = true;
 
         }
         public bool ViveEmAgua { get; set; }
