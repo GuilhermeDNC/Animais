@@ -1,29 +1,16 @@
-﻿using Animais.Animais;
+﻿using Interdicilinar.Animais;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Animais.Bichos
+namespace Interdicilinar.Bichos
 {
-    public class Pinguin:Ave
+    public class Pinguin : Ave, IAquatico
     {
-        public Pinguin(string nome, string nascimento, char sexo, string corDPena)
-        {
-            Nome = nome;
-            try
-            {
-                Nascimento = DateTime.Parse(nascimento);
-            }
-            catch
-            {
-                throw new Exception("Data inválida!");
-            }
-            Sexo = sexo;
-            CorPena = corDPena;
-            Carnivoro = true;
-
-        }
+        public bool ViveEmAgua { get ; set ; }
+        public bool Mergulho { get ; set ; }
+        public bool AguaDoce { get ; set; }
     }
 }

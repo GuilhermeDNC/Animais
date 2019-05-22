@@ -1,10 +1,10 @@
-﻿using Animais.Animais;
+﻿using Interdicilinar.Animais;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Animais.Estrutura.Lista
+namespace Interdicilinar.Estrutura.Lista
 {
     public class Nodo
     {       

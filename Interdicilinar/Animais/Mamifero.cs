@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Animais.Animais
+namespace Interdicilinar.Animais
 {
     public abstract class Mamifero:Animal
     {
         private int quantidadeMamas;
+        private bool pelos;
         private string corDoPelo;
 
         public int QuantidadeMamas
@@ -30,13 +31,23 @@ namespace Animais.Animais
             }
         }
 
-        public bool Pelos { get; set; }
+        public bool Pelos
+        {
+            get
+            {
+                return pelos;
+            }
+            set
+            {
+                pelos = value;
+            }
+        }
 
         public string CorDoPelo
         {
             get
             {
-                if (!Pelos)
+                if (!pelos)
                 {
                     throw new Exception("O animal não tem pelo");
                 }

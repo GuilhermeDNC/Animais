@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Animais.Animais
+namespace Interdicilinar.Animais
 {
     public abstract class Animal
     {
+       // private int codigo;
         private string nome;
         private DateTime nascimento;
         private char sexo;

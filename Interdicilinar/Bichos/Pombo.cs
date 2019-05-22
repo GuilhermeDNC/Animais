@@ -1,29 +1,20 @@
-﻿using Animais.Animais;
+﻿using Interdicilinar.Animais;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Animais.Bichos
+namespace Interdicilinar.Bichos
 {
-    public class Pombo:Ave
+    public class Pombo : Ave, IVoar
     {
-        public Pombo(string nome, string nascimento, char sexo, string corDPena)
+        public int AltitudeMaximaEmMetros { get ; set ; }
+        public double VelocidadeDoVoo { get ; set ; }
+
+        public void Voar()
         {
-            Nome = nome;
-            try
-            {
-                Nascimento = DateTime.Parse(nascimento);
-            }
-            catch
-            {
-                throw new Exception("Data inválida!");
-            }
-            Sexo = sexo;
-            CorPena = corDPena;
-            Rapina = false;
-            Carnivoro = false;
+            throw new NotImplementedException();
         }
     }
 }

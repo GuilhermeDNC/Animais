@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Animais.Properties
+namespace Interdicilinar.Properties
 {
 
 

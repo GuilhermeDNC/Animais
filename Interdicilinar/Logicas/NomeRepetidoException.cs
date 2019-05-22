@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Animais.Logicas
+namespace Interdicilinar.Logicas
 {
     public class NomeRepetidoException:Exception
     {

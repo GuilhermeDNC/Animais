@@ -1,10 +1,10 @@
-﻿using Animais.Animais;
+﻿using Interdicilinar.Animais;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Animais.Estrutura.Lista
+namespace Interdicilinar.Estrutura.Lista
 {
     public class List
     {
@@ -126,11 +126,15 @@ namespace Animais.Estrutura.Lista
             Nodo aux = primeiro;
             while (aux != null)
             {
-                r = r + Environment.NewLine + aux.Dado.ToString();
+                //  r = r + Environment.NewLine + aux.Dado.Nome.ToString();
+                r = r + " " + aux.Dado.Nome.ToString();
                 aux = aux.Proximo;
             }
             return r.Trim();
         }
+
+
+
 
         public bool Pesquisa(string nome)
         {            

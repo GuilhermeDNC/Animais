@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Collections;
-using Animais.Logicas;
-using Animais.Animais;
-using Animais.Estrutura.Lista;
+using Interdicilinar.Logicas;
+using Interdicilinar.Animais;
+using Interdicilinar.Estrutura.Lista;
 
-namespace Animais.Estrutura.Arvore
+namespace Interdicilinar.Estrutura.Arvore
 {
     public class ArvoreBin
     {
         private Nodo raiz = null; // raiz da árvore
         private int qtdeNodosInternos = 0; // qtde de nos internos
-        //private Lista lista;
-        public List lista = new List();
+        private List lista = new List();
         private int maiorProfundidadeEncontrada = 0;
         private int qtdeNodosExternos = 0;
         private IComparer comparador;
@@ -107,7 +106,7 @@ namespace Animais.Estrutura.Arvore
                 return null;
             else if (no.EhExterno())
                 return no; // não achou!
-            else if (comparador.Compare(chave, no.GetValor() ) == 0)
+            else if (comparador.Compare((chave as Animal), no.GetValor()) == 0)
                 return no;
             else if ( comparador.Compare(chave, no.GetValor()) > 0)
                 return PesquisaValor(chave, no.GetNoDireita());

@@ -1,32 +1,20 @@
-﻿using Animais.Animais;
+﻿using Interdicilinar.Animais;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Animais.Bichos
+namespace Interdicilinar.Bichos
 {
-    public class Coruja:Ave
+    public class Coruja : Ave, IVoar
     {
-        public Coruja(string nome, string nascimento, char sexo, string corDPena)
+        public int AltitudeMaximaEmMetros { get ; set ; }
+        public double VelocidadeDoVoo { get ; set ; }
+
+        public void Voar()
         {
-
-            Nome = nome;
-            try
-            {
-                Nascimento = DateTime.Parse(nascimento);
-            }
-            catch
-            {
-                throw new Exception("Data inválida!");
-            }
-            Sexo = sexo;
-            CorPena = corDPena;
-            Rapina = true;
-            Carnivoro = true;
-
-
+            throw new NotImplementedException();
         }
     }
 }
