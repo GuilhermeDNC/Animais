@@ -42,7 +42,7 @@ namespace Interdicilinar.Animais
             }
         }
 
-        public abstract void Ciscar();
+        public abstract string Ciscar();
 
         
     }

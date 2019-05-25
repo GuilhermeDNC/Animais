@@ -20,42 +20,42 @@ namespace Interdicilinar.Bichos
 
         public override string Alimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/coruja/corujaComendo.jpg";
         }
 
         public string Ataque()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/coruja/corujaAtacando.jpg";
         }
 
         public string Botar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/coruja/corujaBotando.jpg";
         }
 
         public string Chocar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/coruja/corujaChocando.jpg";
         }
 
-        public override void Ciscar()
+        public override string Ciscar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/coruja/corujaCiscando.jpg";
         }
 
         public override string Comunicar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/coruja/corujaComunicando.jpg";
         }
 
         public override string Movimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/coruja/corujaMovimentando.jpg";
         }
 
-        public void Voar()
+        public string Voar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/coruja/corujaVoando.jpg";
         }
     }
 }

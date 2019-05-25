@@ -18,27 +18,27 @@ namespace Interdicilinar.Bichos
 
         public override string Alimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/cachorro/cachorroAlimentando.jpg";
         }
 
         public override string Amamentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/cachorro/cachorroAmamentando.jpg";
         }
 
         public string Ataque()
         {
-            return "";
+            return @"../../imagens-animais/cachorro/cachorroAtacando.jpg";
         }
 
         public override string Comunicar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/cachorro/cachorroComunicando.jpg";
         }
 
         public override string Movimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/cachorro/cachorroMovimentando.jpg";
         }
     }
 }

@@ -23,27 +23,27 @@ namespace Interdicilinar.Bichos
 
         public override string Alimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/tartaruga/tartarugaAlimentando.jpg";
         }
 
         public override string Botar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/tartaruga/tartarugaBotando.jpg";
         }
 
         public override string Chocar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/tartaruga/tartarugaChocando.jpg";
         }
 
         public override string Comunicar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/tartaruga/tartarugaComunicando.jpg";
         }
 
         public override string Movimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/tartaruga/tartarugaCaminhando.jpg";
         }
     }
 }

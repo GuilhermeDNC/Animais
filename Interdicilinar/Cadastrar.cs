@@ -319,11 +319,13 @@ namespace Interdicilinar
                 throw new Exception("O valor do campo nome não pode ser nulo...");
             }
 
+
             if (DateTime.TryParse(userControlReptil.TextoNascimento, out nascimento))
                 animal.Nascimento = nascimento;
             else
                 throw new Exception("Insira uma data válida...");
 
+            animal.Sexo = userControlReptil.BoolSexo;
         }
 
         private void LimparForm(Control formulario)

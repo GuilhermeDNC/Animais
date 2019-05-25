@@ -20,37 +20,37 @@ namespace Interdicilinar.Bichos
 
         public override string Alimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/pombo/pomboComendo.jpg";
         }
 
         public string Botar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/pombo/pomboBotando.jpg";
         }
 
         public string Chocar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/pombo/pomboChocando.jpg";
         }
 
-        public override void Ciscar()
+        public override string Ciscar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/pombo/pomboCiscando.jpg";
         }
 
         public override string Comunicar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/pombo/pomboComunicando.jpg";
         }
 
         public override string Movimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/pombo/pomboCaminhando.jpg";
         }
 
-        public void Voar()
+        public string Voar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/pombo/pomboVoando.jpg";
         }
     }
 }

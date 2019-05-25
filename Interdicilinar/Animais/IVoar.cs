@@ -8,7 +8,7 @@ namespace Interdicilinar.Animais
 {
     interface IVoar
     {
-        void Voar();
+        string Voar();
         int AltitudeMaximaEmMetros { get; set; }
         double VelocidadeDoVoo { get; set; }
     }

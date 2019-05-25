@@ -15,37 +15,37 @@ namespace Interdicilinar.Bichos
             Peconhento = false;
             Pelos = false;
         }
-        public int AltitudeMaximaEmMetros { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public double VelocidadeDoVoo { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int AltitudeMaximaEmMetros { get ; set ; }
+        public double VelocidadeDoVoo { get ; set ; }
 
         public override string Alimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/morcego/morcegoAlimentando.jpg";
         }
 
         public override string Amamentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/morcego/morcegoAmamentando.jpg";
         }
 
         public string Ataque()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/morcego/morcegoAtacando.png";
         }
 
         public override string Comunicar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/morcego/morcegoComunicando.jpg";
         }
 
         public override string Movimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/morcego/morcegoCaminhando.jpg";
         }
 
-        public void Voar()
+        public string Voar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/morcego/morcegoVoando.jpg";
         }
     }
 }

@@ -22,37 +22,38 @@ namespace Interdicilinar.Bichos
 
         public override string Alimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/ornitorrinco/ornitorrincoComendo.jpg";
         }
 
         public override string Amamentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/ornitorrinco/ornitorrincoAmamentando.jpg";
         }
 
         public string Ataque()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/ornitorrinco/ornitorrincoAtacando.jpg";
+
         }
 
         public string Botar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/ornitorrinco/ornitorrincoBotando.jpg";
         }
 
         public string Chocar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/ornitorrinco/ornitorrincoChocando.jpg";
         }
 
         public override string Comunicar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/ornitorrinco/ornitorrincoComunicando.jpg";
         }
 
         public override string Movimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/ornitorrinco/ornitorrincoCaminhando.jpg";
         }
     }
 }

@@ -16,27 +16,27 @@ namespace Interdicilinar.Bichos
         }
         public override string Alimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/lobo/loboAlimentando.jpg";
         }
 
         public override string Amamentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/lobo/loboAmamentando.jpg";
         }
 
         public string Ataque()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/lobo/loboAtacando.jpg";
         }
 
         public override string Comunicar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/lobo/loboComunicando.jpg";
         }
 
         public override string Movimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/lobo/loboCaminhando.jpg";
         }
 
        

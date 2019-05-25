@@ -16,27 +16,27 @@ namespace Interdicilinar.Bichos
         }
         public override string Alimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/leao/leaoComendo.jpg";
         }
 
         public override string Amamentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/leao/leaoAmamentando.jpg";
         }
 
         public string Ataque()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/leao/leaoAtacando.jpg";
         }
 
         public override string Comunicar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/leao/leaoComunicando.jpg";
         }
 
         public override string Movimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/leao/leaoCorrendo.jpg";
         }
     }
 }

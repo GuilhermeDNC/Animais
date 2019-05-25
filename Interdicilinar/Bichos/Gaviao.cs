@@ -21,32 +21,32 @@ namespace Interdicilinar.Bichos
 
         public override string Alimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/gaviao/gaviaoComendo.jpg";
         }
 
         public string Ataque()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/gaviao/gaviaoAtacando.jpg";
         }
 
-        public override void Ciscar()
+        public override string Ciscar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/gaviao/gaviaoCiscando.jpg";
         }
 
         public override string Comunicar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/gaviao/gaviaoComunicando.jpg";
         }
 
         public override string Movimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/gaviao/gaviaoCaminhando.jpg";
         }
 
-        public void Voar()
+        public string Voar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/gaviao/gaviaoVoando.jpg";
         }
     }
 }

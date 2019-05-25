@@ -380,7 +380,7 @@
             // 
             // btnCadastrarRepteis
             // 
-            this.btnCadastrarRepteis.Location = new System.Drawing.Point(199, 131);
+            this.btnCadastrarRepteis.Location = new System.Drawing.Point(197, 128);
             this.btnCadastrarRepteis.Name = "btnCadastrarRepteis";
             this.btnCadastrarRepteis.Size = new System.Drawing.Size(75, 23);
             this.btnCadastrarRepteis.TabIndex = 17;

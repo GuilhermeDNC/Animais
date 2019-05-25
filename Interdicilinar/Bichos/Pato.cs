@@ -20,42 +20,43 @@ namespace Interdicilinar.Bichos
 
         public override string Alimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/pato/patoComendo.jpg";
         }
 
         public string Ataque()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/pato/patoAtacando.jpg";
         }
 
         public string Botar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/pato/patoBotando.jpg";
         }
 
         public string Chocar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/pato/patoChocando.jpg";
         }
 
-        public override void Ciscar()
+        public override string Ciscar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/pato/patoCiscando.jpg";
         }
 
         public override string Comunicar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/pato/patoComunicando.jpg";
+
         }
 
         public override string Movimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/pato/patoCorrendo.png";
         }
 
-        public void Voar()
+        public string Voar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/pato/patoVoando.jpg";
         }
     }
 }

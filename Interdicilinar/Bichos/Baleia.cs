@@ -28,22 +28,22 @@ namespace Interdicilinar.Bichos
 
         public override string Amamentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/baleia/baleiaAmamentando.jpg";
         }
 
         public string Ataque()
         {
-            return "";
+            return @"../../imagens-animais/baleia/baleiaAtacando.jpg";
         }
 
         public override string Comunicar()
         {
-            return @"../../imagens-animais/baleia/baleiaComunicando.gif";
+            return @"../../imagens-animais/baleia/baleiaComunicando.jpg";
         }
 
         public override string Movimentar()
         {
-            return @"../../imagens-animais/baleia/baleiaCaminhando.gif";
+            return @"../../imagens-animais/baleia/baleiaMovimentando.jpg";
         }
     }
 }

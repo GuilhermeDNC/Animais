@@ -21,27 +21,27 @@ namespace Interdicilinar.Bichos
 
         public override string Alimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/peixe/peixeComendo.jpg";
         }
 
         public string Botar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/peixe/peixeBotando.jpg";
         }
 
         public string Chocar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/peixe/peixechocando.jpg";
         }
 
         public override string Comunicar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/peixe/peixeComunicando.jpg";
         }
 
         public override string Movimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/peixe/peixeCaminhando.jpg";
         }
     }
 }

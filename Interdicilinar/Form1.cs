@@ -27,7 +27,52 @@ namespace Interdicilinar
             baleia.QuantidadeMamas = 4;
             baleia.Sexo = 'M';
             baleia.Nascimento = DateTime.Parse("09/11/2000");
-   
+
+            Cachorro cachorro = new Cachorro();
+            cachorro.Nome = "Dogão";
+            cachorro.Peconhento = false;
+            cachorro.Pelos = true;
+            cachorro.CorDoPelo = "Preto";
+            cachorro.QuantidadeMamas = 8;
+            cachorro.Sexo = 'M';
+            cachorro.Nascimento = DateTime.Parse("10/09/1995");
+
+            Coruja coruja = new Coruja();
+            coruja.Nome = "Edwiges";
+            coruja.Nascimento = DateTime.Parse("02/02/2002");
+            coruja.Peconhento = false;
+            coruja.Rapina = true;
+            coruja.Sexo = 'F';
+            coruja.VelocidadeDoVoo = 30;
+            coruja.AltitudeMaximaEmMetros = 30;
+
+            Gato gato = new Gato();
+            gato.Nome = "Fred";
+            gato.Peconhento = false;
+            gato.Pelos = true;
+            gato.CorDoPelo = "Preto";
+            gato.QuantidadeMamas = 8;
+            gato.Sexo = 'M';
+            gato.Nascimento = DateTime.Parse("10/09/1998");
+
+           Gaviao gaviao = new Gaviao();
+           gaviao.Nome = "Hawk";
+           gaviao.Nascimento = DateTime.Parse("01/01/2001");
+           gaviao.Peconhento = false;
+           gaviao.Rapina = true;
+           gaviao.Sexo = 'M';
+           gaviao.VelocidadeDoVoo = 50;
+           gaviao.AltitudeMaximaEmMetros = 50;
+
+            Leao leao = new Leao();
+            leao.Nome = "Lion";
+            leao.Peconhento = false;
+            leao.Pelos = true;
+            leao.CorDoPelo = "Amarelo";
+            leao.QuantidadeMamas = 8;
+            leao.Sexo = 'M';
+            leao.Nascimento = DateTime.Parse("20/10/2010");
+
 
             Tartaruga tartaruga = new Tartaruga();
             tartaruga.Nome = "Esmeralda";
@@ -39,6 +84,11 @@ namespace Interdicilinar
             tartaruga.Carnivoro = true;
 
             arvoreBin.Insere(baleia);
+            arvoreBin.Insere(cachorro);
+            arvoreBin.Insere(coruja);
+            arvoreBin.Insere(gato);
+            arvoreBin.Insere(gaviao);
+            arvoreBin.Insere(leao);
             arvoreBin.Insere(tartaruga);
         }
 

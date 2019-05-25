@@ -22,32 +22,32 @@ namespace Interdicilinar.Bichos
 
         public override string Alimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/pinguim/pinguimAlimentando.jpg";
         }
 
         public string Botar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/pinguim/pinguimBotando.jpg";
         }
 
         public string Chocar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/pinguim/pinguimChocando.jpg";
         }
 
-        public override void Ciscar()
+        public override string Ciscar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/pinguim/pinguimCiscando.jpg";
         }
 
         public override string Comunicar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/pinguim/pinguimComunicando.jpg";
         }
 
         public override string Movimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/pinguim/pinguimCaminhando.jpg";
         }
     }
 }

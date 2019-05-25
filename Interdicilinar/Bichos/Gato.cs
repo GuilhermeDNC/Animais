@@ -18,27 +18,27 @@ namespace Interdicilinar.Bichos
         }
         public override string Alimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/gato/gatoComendo.jpg";
         }
 
         public override string Amamentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/gato/gatoAmamentando.jpg";
         }
 
         public string Ataque()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/gato/gatoAtacando.jpg";
         }
 
         public override string Comunicar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/gato/gatoComunicando.jpg";
         }
 
         public override string Movimentar()
         {
-            throw new NotImplementedException();
+            return @"../../imagens-animais/gato/gatoCaminhando.jpg";
         }
     }
 }
