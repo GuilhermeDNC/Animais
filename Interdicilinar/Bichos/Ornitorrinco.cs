@@ -7,18 +7,50 @@ using System.Threading.Tasks;
 
 namespace Interdicilinar.Bichos
 {
-    public class Ornitorrinco : Mamifero, IAquatico, IOviparo
+    public class Ornitorrinco : Mamifero, IAquatico, IOviparo,IPredador
     {
-        public bool ViveEmAgua { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public bool Mergulho { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public bool AguaDoce { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public Ornitorrinco()
+        {
+            Peconhento = true;
+            Carnivoro = true;
+            Pelos = true;
+        }
 
-        public void Botar()
+        public bool ViveEmAgua { get => true;  }
+        public bool Mergulho { get => true; }
+        public bool AguaDoce { get => true; }
+
+        public override string Alimentar()
         {
             throw new NotImplementedException();
         }
 
-        public void Chocar()
+        public override string Amamentar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string Ataque()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string Botar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string Chocar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string Comunicar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string Movimentar()
         {
             throw new NotImplementedException();
         }

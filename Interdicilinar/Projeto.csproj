@@ -112,12 +112,6 @@
     <Compile Include="UserControls\UserControlMamiferos.Designer.cs">
       <DependentUpon>UserControlMamiferos.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UserControlRepteis.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UserControlRepteis.Designer.cs">
-      <DependentUpon>UserControlRepteis.cs</DependentUpon>
-    </Compile>
     <Compile Include="UtilExtensions.cs" />
     <EmbeddedResource Include="Cadastrar.resx">
       <DependentUpon>Cadastrar.cs</DependentUpon>
@@ -146,9 +140,6 @@
     <EmbeddedResource Include="UserControls\UserControlMamiferos.resx">
       <DependentUpon>UserControlMamiferos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UserControlRepteis.resx">
-      <DependentUpon>UserControlRepteis.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -162,6 +153,53 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="imagens-animais\baleia\baleia.jpg" />
+    <Content Include="imagens-animais\baleia\baleiaAlimentando.jpg" />
+    <Content Include="imagens-animais\baleia\baleiaAmamentando.jpg" />
+    <Content Include="imagens-animais\baleia\baleiaAtacando.jpg" />
+    <Content Include="imagens-animais\baleia\baleiaCaminhando.gif" />
+    <Content Include="imagens-animais\cachorro\cachorro.jpg" />
+    <Content Include="imagens-animais\cachorro\cachorroAmamentando.jpg" />
+    <Content Include="imagens-animais\cachorro\cachorroAndando.gif" />
+    <Content Include="imagens-animais\cachorro\cachorroAtacando.jpg" />
+    <Content Include="imagens-animais\coruja\coruja.jpg" />
+    <Content Include="imagens-animais\coruja\corujaAtacando.jpg" />
+    <Content Include="imagens-animais\coruja\corujaCiscando.jpg" />
+    <Content Include="imagens-animais\coruja\corujaVoando.jpg" />
+    <Content Include="imagens-animais\gato\gato.jpg" />
+    <Content Include="imagens-animais\gato\gatoAmamentando.jpg" />
+    <Content Include="imagens-animais\gato\gatoAtacando.jpg" />
+    <Content Include="imagens-animais\gaviao\gaviao.JPG" />
+    <Content Include="imagens-animais\gaviao\gaviaoAtacando.jpg" />
+    <Content Include="imagens-animais\gaviao\gaviaoCiscando.jpg" />
+    <Content Include="imagens-animais\gaviao\gaviaoVoando.jpg" />
+    <Content Include="imagens-animais\leao\leao.jpg" />
+    <Content Include="imagens-animais\leao\leaoAmamentando.jpg" />
+    <Content Include="imagens-animais\leao\leaoAtacando.jpg" />
+    <Content Include="imagens-animais\leao\leoa.jpg" />
+    <Content Include="imagens-animais\leao\leoaAtacando.jpg" />
+    <Content Include="imagens-animais\lobo\lobo.jpg" />
+    <Content Include="imagens-animais\lobo\loboAmamentando.jpg" />
+    <Content Include="imagens-animais\lobo\loboAtacando.jpg" />
+    <Content Include="imagens-animais\morcego\morcego.jpg" />
+    <Content Include="imagens-animais\morcego\morcegoAmamentando.jpg" />
+    <Content Include="imagens-animais\morcego\morcegoAtacando.png" />
+    <Content Include="imagens-animais\morcego\morcegoVoando.jpg" />
+    <Content Include="imagens-animais\ornitorrinco\ornitorrinco.jpg" />
+    <Content Include="imagens-animais\ornitorrinco\ornitorrincoAmamentando.jpg" />
+    <Content Include="imagens-animais\ornitorrinco\ornitorrincoAtacando.jpg" />
+    <Content Include="imagens-animais\pato\pato.jpg" />
+    <Content Include="imagens-animais\pato\patoAtacando.jpg" />
+    <Content Include="imagens-animais\pato\patoCiscando.jpg" />
+    <Content Include="imagens-animais\peixe\peixe.jpg" />
+    <Content Include="imagens-animais\peixe\peixeMergulhando.jpg" />
+    <Content Include="imagens-animais\pinguim\pinguim.jpeg" />
+    <Content Include="imagens-animais\pombo\pombo.jpg" />
+    <Content Include="imagens-animais\pombo\pomboAtacando.jpg" />
+    <Content Include="imagens-animais\pombo\pomboVoando.jpg" />
+    <Content Include="imagens-animais\tartaruga\tartaruga.jpg" />
+    <Content Include="imagens-animais\tartaruga\tartarugaNadando.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

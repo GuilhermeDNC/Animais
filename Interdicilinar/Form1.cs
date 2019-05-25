@@ -16,10 +16,30 @@ namespace Interdicilinar
     public partial class Form1 : Form
     {
 
-        private ArvoreBin arvoreBin = new ArvoreBin(new ComparadorCodigo());
+        private ArvoreBin arvoreBin = UtilExtensions.arvore;
         public Form1()
         {
             InitializeComponent();
+            Baleia baleia = new Baleia();
+            baleia.Nome = "Free Willy";
+            baleia.Peconhento = false;
+            baleia.Pelos = false;
+            baleia.QuantidadeMamas = 4;
+            baleia.Sexo = 'M';
+            baleia.Nascimento = DateTime.Parse("09/11/2000");
+   
+
+            Tartaruga tartaruga = new Tartaruga();
+            tartaruga.Nome = "Esmeralda";
+            tartaruga.Nascimento = DateTime.Parse("11/11/2011");
+            tartaruga.Peconhento = false;
+            tartaruga.Sexo = 'F';
+            tartaruga.TemCasco = true;
+            tartaruga.TemEscamas = true;
+            tartaruga.Carnivoro = true;
+
+            arvoreBin.Insere(baleia);
+            arvoreBin.Insere(tartaruga);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -42,10 +62,8 @@ namespace Interdicilinar
             baleia.Peconhento = false;
             baleia.Nascimento = DateTime.Parse("02/03/2005");
             baleia.Sexo = 'F';
-            baleia.ViveEmAgua = true;
             baleia.QuantidadeMamas = 8;
             baleia.Pelos = false;
-            baleia.Mergulho = true;
             
 
             lista.InserirNoFim(ave);

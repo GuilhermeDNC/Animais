@@ -7,10 +7,51 @@ using System.Threading.Tasks;
 
 namespace Interdicilinar.Bichos
 {
-    public class Coruja : Ave, IVoar
+    public class Coruja : Ave, IVoar,IPredador,IOviparo
     {
+        public Coruja()
+        {
+            Peconhento = false;
+            Carnivoro = true;
+            Rapina = true;
+        }
         public int AltitudeMaximaEmMetros { get ; set ; }
         public double VelocidadeDoVoo { get ; set ; }
+
+        public override string Alimentar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string Ataque()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string Botar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string Chocar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Ciscar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string Comunicar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string Movimentar()
+        {
+            throw new NotImplementedException();
+        }
 
         public void Voar()
         {

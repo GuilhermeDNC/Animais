@@ -95,20 +95,11 @@ namespace Interdicilinar.Animais
             return DateTime.Now.Year - nascimento.Year;
         }
 
-        public void Movimentar()
-        {
+        public abstract string Movimentar();
 
-        }
+        public abstract string Comunicar();
 
-        public void Comunicar()
-        {
-
-        }
-
-        public void Alimentar()
-        {
-
-        }
+        public abstract string Alimentar();
 
     }
 }

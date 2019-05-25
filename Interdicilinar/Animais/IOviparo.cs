@@ -8,7 +8,7 @@ namespace Interdicilinar.Animais
 {
     interface IOviparo
     {
-        void Botar();
-        void Chocar();
+        string Botar();
+        string Chocar();
     }
 }

@@ -25,78 +25,57 @@ namespace Interdicilinar
 
             rbPato.Checked = true;
             rbCachorro.Checked = true;
-
-            rbSimAguaDoce.Enabled = true;
-            rbSimAguaDoceAve.Enabled = true;
-            rbSimAguaDoceRepteis.Enabled = true;
-
-            rbSimMergulha.Enabled = true;
-            rbSimMergulhaAve.Enabled = true;
-            rbSimMergulhaRepteis.Enabled = true;
-
-            rbSimViveAgua.Enabled = true;
-            rbSimViveAguaAve.Enabled = true;
-            rbSimViveAguaRepteis.Enabled = true;
-
         }
 
         private void rbBaleia_CheckedChanged(object sender, EventArgs e)
         {
-            EnablesMamiferos(false, true);
+            EnablesMamiferos(false);
             btnCadastrarMamiferos.Enabled = true;
-            rbSimViveAgua.Enabled = true;
-            groupBoxViveAgua.Enabled = false;
-            
-            
         }
 
         private void rbCachorro_CheckedChanged(object sender, EventArgs e)
         {
-            EnablesMamiferos(false, false);
+            EnablesMamiferos(false);
             btnCadastrarMamiferos.Enabled = true;
         }
 
 
         private void rbGato_CheckedChanged(object sender, EventArgs e)
         {
-            EnablesMamiferos(false, false);
+            EnablesMamiferos(false);
             btnCadastrarMamiferos.Enabled = true;
         }
 
         private void rbLeao_CheckedChanged(object sender, EventArgs e)
         {
-            EnablesMamiferos(false, false);
+            EnablesMamiferos(false);
             btnCadastrarMamiferos.Enabled = true;
         }
 
         private void rbLobo_CheckedChanged(object sender, EventArgs e)
         {
-            EnablesMamiferos(false, false);
+            EnablesMamiferos(false);
             btnCadastrarMamiferos.Enabled = true;
         }
 
         private void rbMorcego_CheckedChanged(object sender, EventArgs e)
         {
-            EnablesMamiferos(true, false);
+            EnablesMamiferos(true);
             btnCadastrarMamiferos.Enabled = true;
         }
 
         private void rbOrnitorrinco_CheckedChanged(object sender, EventArgs e)
         {
-            EnablesMamiferos(false, true);
+            EnablesMamiferos(false);
             btnCadastrarMamiferos.Enabled = true;
         }
 
-        private void EnablesMamiferos(bool voador, bool aquatico)
+        private void EnablesMamiferos(bool voador)
         {
             txtVelocidade.Visible = voador;
             lblVelocidadeMamiferos.Visible = voador;
             txtAltitude.Visible = voador;
             lblAltitudeMamiferos.Visible = voador;
-
-            groupBoxAguaDoce.Visible = aquatico;
-            groupBoxMergulha.Visible = aquatico;
-            groupBoxViveAgua.Visible = aquatico;
         }
 
         private void EnablesAves(bool voador, bool aquatico)
@@ -105,10 +84,6 @@ namespace Interdicilinar
             lblVelocidadeAves.Visible = voador;
             txtAltitudeAve.Visible = voador;
             lblAltitudeAves.Visible = voador;
-
-            groupBoxAguaDoceAve.Visible = aquatico;
-            groupBoxMergulhaAve.Visible = aquatico;
-            groupBoxViveAguaAve.Visible = aquatico;
         }
 
         private void rbCoruja_CheckedChanged(object sender, EventArgs e)
@@ -151,9 +126,6 @@ namespace Interdicilinar
                 if (rbBaleia.Checked)
                 {
                     animal = new Baleia();
-                    (animal as Baleia).Mergulho = rbSimMergulha.Checked ? true : false;
-                    (animal as Baleia).ViveEmAgua = rbSimMergulha.Checked ? true : false;
-                    (animal as Baleia).AguaDoce = rbSimAguaDoce.Checked ? true : false;
                 }
                 else if (rbCachorro.Checked)
                 {
@@ -180,9 +152,6 @@ namespace Interdicilinar
                 else if (rbOrnitorrinco.Checked)
                 {
                     animal = new Ornitorrinco();
-                    (animal as Ornitorrinco).AguaDoce = rbSimAguaDoce.Checked ? true : false;
-                    (animal as Ornitorrinco).Mergulho = rbSimMergulha.Checked ? true : false;
-                    (animal as Ornitorrinco).ViveEmAgua = rbSimViveAgua.Checked ? true : false;
                 }
                 else
                 {
@@ -198,8 +167,6 @@ namespace Interdicilinar
             {
                 MessageBox.Show(erro.Message);
             }
-
-
         }
 
         private void btnCadastrarAves_Click(object sender, EventArgs e)
@@ -225,16 +192,10 @@ namespace Interdicilinar
 
                     (animal as Pato).AltitudeMaximaEmMetros = int.Parse(txtAltitudeAve.Text);
                     (animal as Pato).VelocidadeDoVoo = double.Parse(txtVelocidadeAve.Text);
-
-
-
                 }
                 else if (rbPinguim.Checked)
                 {
                     animal = new Pinguin();
-                    (animal as Pinguin).AguaDoce = rbSimAguaDoceAve.Checked ? true : false;
-                    (animal as Pinguin).Mergulho = rbSimMergulhaAve.Checked ? true : false;
-                    (animal as Pinguin).ViveEmAgua = rbSimViveAguaAve.Checked ? true : false;
                 }
                 else if (rbPombo.Checked)
                 {
@@ -248,7 +209,6 @@ namespace Interdicilinar
                     {
                         MessageBox.Show("Insira valores válidos...");
                     }
-
                 }
                 else
                 {
@@ -275,9 +235,6 @@ namespace Interdicilinar
                 if (rbTartaruga.Checked)
                 {
                     animal = new Tartaruga();
-                    (animal as Tartaruga).ViveEmAgua = rbSimViveAguaRepteis.Checked ? true : false;
-                    (animal as Tartaruga).AguaDoce = rbSimAguaDoceRepteis.Checked ? true : false;
-                    (animal as Tartaruga).Mergulho = rbSimMergulhaRepteis.Checked ? true : false;
                 }
                 else
                 {
@@ -353,22 +310,19 @@ namespace Interdicilinar
         private void CadastrarDadosRepteis(Reptil animal)
         {
             DateTime nascimento;
-            animal.Carnivoro = userControlRepteis1.Carnivoro;
+            if (!string.IsNullOrEmpty(userControlReptil.TextoNome))
+            {
+                animal.Nome = userControlReptil.TextoNome;
+            }
+            else
+            {
+                throw new Exception("O valor do campo nome não pode ser nulo...");
+            }
 
-            if (DateTime.TryParse(userControlAve1.Nascimento, out nascimento))
+            if (DateTime.TryParse(userControlReptil.TextoNascimento, out nascimento))
                 animal.Nascimento = nascimento;
             else
                 throw new Exception("Insira uma data válida...");
-
-            if (string.IsNullOrEmpty(userControlRepteis1.Nome))
-                throw new Exception("o campo nome não pode estar vazio...");
-            else
-                animal.Nome = userControlRepteis1.Nome;
-
-            animal.Peconhento = userControlRepteis1.Peconhento;
-            animal.Sexo = userControlRepteis1.Sexo;
-            animal.TemCasco = userControlRepteis1.TemCasco;
-            animal.TemEscamas = userControlRepteis1.Escamas;
 
         }
 

@@ -88,22 +88,6 @@ namespace Interdicilinar.UserControls
         {
             this.corPenas = txtCorPenas.Text;
         }
-
-        private void rbSimRapina_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rbSimRapina.Checked)
-                Rapina = true;
-            else
-                Rapina = false;
-        }
-
-        private void rbNaoRapina_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rbNaoRapina.Checked)
-                Rapina = false;
-            else
-                Rapina = true;
-        }
     }
 
 

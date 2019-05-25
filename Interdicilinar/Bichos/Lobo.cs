@@ -9,9 +9,36 @@ namespace Interdicilinar.Bichos
 {
     public class Lobo : Mamifero, IPredador
     {
-        public void Ataque()
+        public Lobo()
+        {
+            Peconhento = false;
+            Carnivoro = true;
+        }
+        public override string Alimentar()
         {
             throw new NotImplementedException();
         }
+
+        public override string Amamentar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string Ataque()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string Comunicar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string Movimentar()
+        {
+            throw new NotImplementedException();
+        }
+
+       
     }
 }

@@ -8,6 +8,6 @@ namespace Interdicilinar.Animais
 {
     interface IPredador
     {
-        void Ataque();
+        string Ataque();
     }
 }

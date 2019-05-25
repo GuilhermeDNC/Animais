@@ -7,10 +7,41 @@ using System.Threading.Tasks;
 
 namespace Interdicilinar.Bichos
 {
-    public class Peixe : Animal, IAquatico
+    public class Peixe : Animal, IAquatico,IOviparo
     {
-        public bool ViveEmAgua { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public bool Mergulho { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public bool AguaDoce { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        
+        public Peixe()
+        {
+            
+        }
+
+        public bool ViveEmAgua { get => true; }
+        public bool Mergulho { get => true; }
+        public bool AguaDoce { get; set; }
+
+        public override string Alimentar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string Botar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string Chocar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string Comunicar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string Movimentar()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

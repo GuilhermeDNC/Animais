@@ -11,6 +11,14 @@ namespace Interdicilinar.Estrutura.Lista
         Nodo primeiro = null; // ponteiro para o primeiro elemento da lista
         int qtde = 0;
 
+
+        public int Tamanho
+        {
+            get
+            {
+                return qtde;
+            }
+        }
         /// <summary>
         /// Método para inserir um valor na lista
         /// </summary>
@@ -120,21 +128,31 @@ namespace Interdicilinar.Estrutura.Lista
         /// Retorna um string com todos os elementos da lista concatenados
         /// </summary>
         /// <returns></returns>
-        public string Listar()
+        //public string Listar()
+        //{
+        //    string r = string.Empty;
+        //    Nodo aux = primeiro;
+        //    while (aux != null)
+        //    {
+        //        //  r = r + Environment.NewLine + aux.Dado.Nome.ToString();
+        //        r = r + " " + aux.Dado.Nome.ToString();
+        //        aux = aux.Proximo;
+        //    }
+        //    return r.Trim();
+        //}
+
+        public Animal[] Listar()
         {
-            string r = string.Empty;
+            int indice = 0;
+            Animal[] animais = new Animal[qtde];
             Nodo aux = primeiro;
             while (aux != null)
             {
-                //  r = r + Environment.NewLine + aux.Dado.Nome.ToString();
-                r = r + " " + aux.Dado.Nome.ToString();
+                animais[indice++] = aux.Dado;
                 aux = aux.Proximo;
             }
-            return r.Trim();
+            return animais;
         }
-
-
-
 
         public bool Pesquisa(string nome)
         {            
@@ -148,7 +166,17 @@ namespace Interdicilinar.Estrutura.Lista
             return false;
         }
 
-
+        public Animal RetornaAnimal(string nome)
+        {
+            Nodo aux = primeiro;
+            while (aux != null)
+            {
+                if (aux.Dado.Nome == nome)
+                    return aux.Dado;
+                aux = aux.Proximo;
+            }
+            return null;
+        }
 
 
     }

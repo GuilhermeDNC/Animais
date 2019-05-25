@@ -69,10 +69,7 @@ namespace Interdicilinar.Animais
             }
         }
 
-        public void Amamentar()
-        {
-
-        }
+        public abstract string Amamentar();
 
     }
 }

@@ -10,6 +10,7 @@ namespace Interdicilinar.Animais
     {
         private bool rapina;
         private string corPena;
+
         public bool Rapina
         {
             get
@@ -41,6 +42,8 @@ namespace Interdicilinar.Animais
             }
         }
 
-        public void Ciscar() { }
+        public abstract void Ciscar();
+
+        
     }
 }

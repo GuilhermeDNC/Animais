@@ -119,41 +119,6 @@ namespace Interdicilinar.UserControls
             //VerificaChecado(rbFeminino, BoolSexo, 'F');
         }
 
-        private void rbCarnivoroSim_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rbCarnivoroSim.Checked)
-                BoolCarnivoro = true;
-            else
-                BoolCarnivoro = false;
-            //VerificaChecado(rbCarnivoroSim,BoolCarnivoro, true);
-        }
-
-        private void rbCarnivoroNao_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rbCarnivoroNao.Checked)
-                BoolCarnivoro = false;
-            else
-                BoolCarnivoro = true;
-            //VerificaChecado(rbCarnivoroNao,BoolCarnivoro, false);
-        }
-
-        private void rbPeconhentoSim_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rbPeconhentoSim.Checked)
-                BoolPeconhento = true;
-            else
-                BoolPeconhento = false;
-            //VerificaChecado(rbPeconhentoSim, BoolPeconhento, true);
-        }
-
-        private void rbPeconhentoNao_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rbPeconhentoNao.Checked)
-                BoolPeconhento = false;
-            else
-                BoolPeconhento = true;
-            // VerificaChecado(rbPeconhentoNao, BoolPeconhento, false);
-        }
 
         public void VerificaChecado(RadioButton radio, bool propriedade, bool valor)
         {

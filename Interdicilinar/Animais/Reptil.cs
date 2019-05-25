@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interdicilinar.Animais
 {
-    public abstract class Reptil:Animal
+    public abstract class Reptil:Animal,IOviparo
     {
         private bool temEscamas;
         private bool temCasco;
@@ -34,5 +34,12 @@ namespace Interdicilinar.Animais
                 temCasco = value;
             }
         }
+
+        public abstract string Botar();
+
+
+
+        public abstract string Chocar();
+       
     }
 }

@@ -8,8 +8,8 @@ namespace Interdicilinar.Animais
 {
     interface IAquatico
     {
-        bool ViveEmAgua { get; set; }
-        bool Mergulho { get; set; }
-        bool AguaDoce { get; set; }
+        bool ViveEmAgua { get; }
+        bool Mergulho { get;  }
+        bool AguaDoce { get; }
     }
 }
