@@ -22,7 +22,7 @@ namespace Interdicilinar
         {
             InitializeComponent();
 
-          
+
             Baleia baleia = new Baleia();
             baleia.Nome = "Free Willy";
             baleia.Peconhento = false;
@@ -59,15 +59,15 @@ namespace Interdicilinar
             gato.Sexo = 'M';
             gato.Nascimento = DateTime.Parse("10/09/1998");
 
-           Gaviao gaviao = new Gaviao();
-           gaviao.Nome = "Hawk";
-           gaviao.Nascimento = DateTime.Parse("01/01/2001");
-           gaviao.Peconhento = false;
-           gaviao.Rapina = true;
+            Gaviao gaviao = new Gaviao();
+            gaviao.Nome = "Hawk";
+            gaviao.Nascimento = DateTime.Parse("01/01/2001");
+            gaviao.Peconhento = false;
+            gaviao.Rapina = true;
             gaviao.CorPena = "Preto e amarelo";
-           gaviao.Sexo = 'M';
-           gaviao.VelocidadeDoVoo = 50;
-           gaviao.AltitudeMaximaEmMetros = 50;
+            gaviao.Sexo = 'M';
+            gaviao.VelocidadeDoVoo = 50;
+            gaviao.AltitudeMaximaEmMetros = 50;
 
             Leao leao = new Leao();
             leao.Nome = "Lion";
@@ -102,13 +102,13 @@ namespace Interdicilinar
             ornitorrinco.Pelos = false;
             ornitorrinco.Nascimento = DateTime.Parse("20/10/2010");
 
-           Pato pato = new Pato();
-           pato.Nome = "Donald";
-           pato.Nascimento = DateTime.Parse("01/09/2018");
-           pato.CorPena = "Preto e amarelo";
-           pato.Sexo = 'M';
-           pato.VelocidadeDoVoo = 65;
-           pato.AltitudeMaximaEmMetros = 80;
+            Pato pato = new Pato();
+            pato.Nome = "Donald";
+            pato.Nascimento = DateTime.Parse("01/09/2018");
+            pato.CorPena = "Preto e amarelo";
+            pato.Sexo = 'M';
+            pato.VelocidadeDoVoo = 65;
+            pato.AltitudeMaximaEmMetros = 80;
 
             Pinguim pinguim = new Pinguim();
             pinguim.Nome = "Happy Feet";

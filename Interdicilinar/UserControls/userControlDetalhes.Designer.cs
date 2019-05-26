@@ -118,9 +118,8 @@
             this.lblNome.Location = new System.Drawing.Point(91, 29);
             this.lblNome.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(67, 26);
+            this.lblNome.Size = new System.Drawing.Size(0, 26);
             this.lblNome.TabIndex = 7;
-            this.lblNome.Text = "label5";
             // 
             // lblCarnivoro
             // 
@@ -129,9 +128,8 @@
             this.lblCarnivoro.Location = new System.Drawing.Point(124, 139);
             this.lblCarnivoro.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblCarnivoro.Name = "lblCarnivoro";
-            this.lblCarnivoro.Size = new System.Drawing.Size(67, 26);
+            this.lblCarnivoro.Size = new System.Drawing.Size(0, 26);
             this.lblCarnivoro.TabIndex = 9;
-            this.lblCarnivoro.Text = "label8";
             // 
             // lblSexo
             // 
@@ -140,9 +138,8 @@
             this.lblSexo.Location = new System.Drawing.Point(91, 101);
             this.lblSexo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblSexo.Name = "lblSexo";
-            this.lblSexo.Size = new System.Drawing.Size(67, 26);
+            this.lblSexo.Size = new System.Drawing.Size(0, 26);
             this.lblSexo.TabIndex = 10;
-            this.lblSexo.Text = "label9";
             // 
             // lblIdade
             // 
@@ -151,9 +148,8 @@
             this.lblIdade.Location = new System.Drawing.Point(87, 66);
             this.lblIdade.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblIdade.Name = "lblIdade";
-            this.lblIdade.Size = new System.Drawing.Size(78, 26);
+            this.lblIdade.Size = new System.Drawing.Size(0, 26);
             this.lblIdade.TabIndex = 11;
-            this.lblIdade.Text = "label10";
             // 
             // lblPeconhento
             // 
@@ -162,9 +158,8 @@
             this.lblPeconhento.Location = new System.Drawing.Point(144, 176);
             this.lblPeconhento.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblPeconhento.Name = "lblPeconhento";
-            this.lblPeconhento.Size = new System.Drawing.Size(78, 26);
+            this.lblPeconhento.Size = new System.Drawing.Size(0, 26);
             this.lblPeconhento.TabIndex = 12;
-            this.lblPeconhento.Text = "label11";
             // 
             // groupBox1
             // 
@@ -180,7 +175,7 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Location = new System.Drawing.Point(3, 306);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(230, 206);
+            this.groupBox1.Size = new System.Drawing.Size(271, 206);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Comuns";

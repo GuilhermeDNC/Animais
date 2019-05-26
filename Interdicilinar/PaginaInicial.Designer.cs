@@ -197,6 +197,7 @@
             this.lbAnimais.Dock = System.Windows.Forms.DockStyle.Left;
             this.lbAnimais.Font = new System.Drawing.Font("Open Sans", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAnimais.FormattingEnabled = true;
+            this.lbAnimais.HorizontalScrollbar = true;
             this.lbAnimais.ItemHeight = 22;
             this.lbAnimais.Location = new System.Drawing.Point(0, 0);
             this.lbAnimais.Name = "lbAnimais";

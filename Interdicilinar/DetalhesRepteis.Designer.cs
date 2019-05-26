@@ -37,12 +37,12 @@
             this.btnComunicar = new System.Windows.Forms.Button();
             this.btnMovimentar = new System.Windows.Forms.Button();
             this.btnAlimentar = new System.Windows.Forms.Button();
-            this.userControlDetalhes1 = new Interdicilinar.UserControls.userControlDetalhes();
             this.lblTemCasco = new System.Windows.Forms.Label();
             this.lblTemEscamasValor = new System.Windows.Forms.Label();
             this.lblTemCascoValor = new System.Windows.Forms.Label();
             this.lblTemEscamas = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.userControlDetalhes1 = new Interdicilinar.UserControls.userControlDetalhes();
             this.gbOviparos.SuspendLayout();
             this.gbComuns.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -145,22 +145,6 @@
             this.btnAlimentar.UseVisualStyleBackColor = true;
             this.btnAlimentar.Click += new System.EventHandler(this.btnAlimentar_Click);
             // 
-            // userControlDetalhes1
-            // 
-            this.userControlDetalhes1.Carnivoro = "label8";
-            this.userControlDetalhes1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.userControlDetalhes1.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userControlDetalhes1.Idade = "label10";
-            this.userControlDetalhes1.Imagem = null;
-            this.userControlDetalhes1.Location = new System.Drawing.Point(0, 0);
-            this.userControlDetalhes1.Margin = new System.Windows.Forms.Padding(6);
-            this.userControlDetalhes1.Name = "userControlDetalhes1";
-            this.userControlDetalhes1.Nome = "label5";
-            this.userControlDetalhes1.Peconhento = "label11";
-            this.userControlDetalhes1.Sexo = "label9";
-            this.userControlDetalhes1.Size = new System.Drawing.Size(464, 517);
-            this.userControlDetalhes1.TabIndex = 0;
-            // 
             // lblTemCasco
             // 
             this.lblTemCasco.AutoSize = true;
@@ -206,12 +190,28 @@
             this.groupBox1.Controls.Add(this.lblTemEscamasValor);
             this.groupBox1.Controls.Add(this.lblTemCascoValor);
             this.groupBox1.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(249, 306);
+            this.groupBox1.Location = new System.Drawing.Point(275, 307);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(283, 100);
+            this.groupBox1.Size = new System.Drawing.Size(197, 100);
             this.groupBox1.TabIndex = 33;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Répteis";
+            // 
+            // userControlDetalhes1
+            // 
+            this.userControlDetalhes1.Carnivoro = "label8";
+            this.userControlDetalhes1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.userControlDetalhes1.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userControlDetalhes1.Idade = "label10";
+            this.userControlDetalhes1.Imagem = null;
+            this.userControlDetalhes1.Location = new System.Drawing.Point(0, 0);
+            this.userControlDetalhes1.Margin = new System.Windows.Forms.Padding(6);
+            this.userControlDetalhes1.Name = "userControlDetalhes1";
+            this.userControlDetalhes1.Nome = "label5";
+            this.userControlDetalhes1.Peconhento = "label11";
+            this.userControlDetalhes1.Sexo = "label9";
+            this.userControlDetalhes1.Size = new System.Drawing.Size(464, 517);
+            this.userControlDetalhes1.TabIndex = 0;
             // 
             // DetalhesRepteis
             // 
