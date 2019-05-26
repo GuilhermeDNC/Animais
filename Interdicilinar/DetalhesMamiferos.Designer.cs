@@ -52,71 +52,90 @@
             // lblPossuiPelo
             // 
             this.lblPossuiPelo.AutoSize = true;
-            this.lblPossuiPelo.Location = new System.Drawing.Point(222, 213);
+            this.lblPossuiPelo.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPossuiPelo.Location = new System.Drawing.Point(264, 340);
+            this.lblPossuiPelo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPossuiPelo.Name = "lblPossuiPelo";
-            this.lblPossuiPelo.Size = new System.Drawing.Size(64, 13);
+            this.lblPossuiPelo.Size = new System.Drawing.Size(121, 26);
             this.lblPossuiPelo.TabIndex = 1;
             this.lblPossuiPelo.Text = "Possui pelo:";
             // 
             // lblMamas
             // 
             this.lblMamas.AutoSize = true;
-            this.lblMamas.Location = new System.Drawing.Point(222, 189);
+            this.lblMamas.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMamas.Location = new System.Drawing.Point(261, 304);
+            this.lblMamas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMamas.Name = "lblMamas";
-            this.lblMamas.Size = new System.Drawing.Size(117, 13);
+            this.lblMamas.Size = new System.Drawing.Size(225, 26);
             this.lblMamas.TabIndex = 2;
             this.lblMamas.Text = "Quantidade de Mamas:";
             // 
             // lblCorPelo
             // 
             this.lblCorPelo.AutoSize = true;
-            this.lblCorPelo.Location = new System.Drawing.Point(222, 236);
+            this.lblCorPelo.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorPelo.Location = new System.Drawing.Point(264, 377);
+            this.lblCorPelo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCorPelo.Name = "lblCorPelo";
-            this.lblCorPelo.Size = new System.Drawing.Size(64, 13);
+            this.lblCorPelo.Size = new System.Drawing.Size(123, 26);
             this.lblCorPelo.TabIndex = 3;
             this.lblCorPelo.Text = "Cor do pelo:";
             // 
             // lblPossuiPeloValor
             // 
             this.lblPossuiPeloValor.AutoSize = true;
-            this.lblPossuiPeloValor.Location = new System.Drawing.Point(306, 213);
+            this.lblPossuiPeloValor.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPossuiPeloValor.Location = new System.Drawing.Point(393, 340);
+            this.lblPossuiPeloValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPossuiPeloValor.Name = "lblPossuiPeloValor";
-            this.lblPossuiPeloValor.Size = new System.Drawing.Size(0, 13);
+            this.lblPossuiPeloValor.Size = new System.Drawing.Size(111, 26);
             this.lblPossuiPeloValor.TabIndex = 4;
+            this.lblPossuiPeloValor.Text = "PossuiPelo";
             // 
             // lblCorPeloValor
             // 
             this.lblCorPeloValor.AutoSize = true;
-            this.lblCorPeloValor.Location = new System.Drawing.Point(306, 236);
+            this.lblCorPeloValor.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorPeloValor.Location = new System.Drawing.Point(405, 377);
+            this.lblCorPeloValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCorPeloValor.Name = "lblCorPeloValor";
-            this.lblCorPeloValor.Size = new System.Drawing.Size(0, 13);
+            this.lblCorPeloValor.Size = new System.Drawing.Size(81, 26);
             this.lblCorPeloValor.TabIndex = 5;
+            this.lblCorPeloValor.Text = "corPelo";
             // 
             // lblMamasValor
             // 
             this.lblMamasValor.AutoSize = true;
-            this.lblMamasValor.Location = new System.Drawing.Point(345, 189);
+            this.lblMamasValor.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMamasValor.Location = new System.Drawing.Point(487, 304);
+            this.lblMamasValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMamasValor.Name = "lblMamasValor";
-            this.lblMamasValor.Size = new System.Drawing.Size(0, 13);
+            this.lblMamasValor.Size = new System.Drawing.Size(187, 26);
             this.lblMamasValor.TabIndex = 6;
+            this.lblMamasValor.Text = "QuantidadeMamas";
             // 
             // gbComuns
             // 
+            this.gbComuns.BackColor = System.Drawing.Color.DimGray;
             this.gbComuns.Controls.Add(this.btnComunicar);
             this.gbComuns.Controls.Add(this.btnMovimentar);
             this.gbComuns.Controls.Add(this.btnAlimentar);
-            this.gbComuns.Location = new System.Drawing.Point(453, 30);
+            this.gbComuns.Location = new System.Drawing.Point(496, 13);
+            this.gbComuns.Margin = new System.Windows.Forms.Padding(4);
             this.gbComuns.Name = "gbComuns";
-            this.gbComuns.Size = new System.Drawing.Size(260, 75);
+            this.gbComuns.Padding = new System.Windows.Forms.Padding(4);
+            this.gbComuns.Size = new System.Drawing.Size(347, 92);
             this.gbComuns.TabIndex = 17;
             this.gbComuns.TabStop = false;
             this.gbComuns.Text = "Comuns";
             // 
             // btnComunicar
             // 
-            this.btnComunicar.Location = new System.Drawing.Point(91, 33);
+            this.btnComunicar.Location = new System.Drawing.Point(121, 41);
+            this.btnComunicar.Margin = new System.Windows.Forms.Padding(4);
             this.btnComunicar.Name = "btnComunicar";
-            this.btnComunicar.Size = new System.Drawing.Size(75, 23);
+            this.btnComunicar.Size = new System.Drawing.Size(100, 28);
             this.btnComunicar.TabIndex = 4;
             this.btnComunicar.Text = "Comunicar";
             this.btnComunicar.UseVisualStyleBackColor = true;
@@ -124,9 +143,10 @@
             // 
             // btnMovimentar
             // 
-            this.btnMovimentar.Location = new System.Drawing.Point(10, 33);
+            this.btnMovimentar.Location = new System.Drawing.Point(13, 41);
+            this.btnMovimentar.Margin = new System.Windows.Forms.Padding(4);
             this.btnMovimentar.Name = "btnMovimentar";
-            this.btnMovimentar.Size = new System.Drawing.Size(75, 23);
+            this.btnMovimentar.Size = new System.Drawing.Size(100, 28);
             this.btnMovimentar.TabIndex = 2;
             this.btnMovimentar.Text = "Movimentar";
             this.btnMovimentar.UseVisualStyleBackColor = true;
@@ -134,9 +154,10 @@
             // 
             // btnAlimentar
             // 
-            this.btnAlimentar.Location = new System.Drawing.Point(172, 33);
+            this.btnAlimentar.Location = new System.Drawing.Point(229, 41);
+            this.btnAlimentar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAlimentar.Name = "btnAlimentar";
-            this.btnAlimentar.Size = new System.Drawing.Size(75, 23);
+            this.btnAlimentar.Size = new System.Drawing.Size(100, 28);
             this.btnAlimentar.TabIndex = 3;
             this.btnAlimentar.Text = "Alimentar";
             this.btnAlimentar.UseVisualStyleBackColor = true;
@@ -144,30 +165,36 @@
             // 
             // btnVoar
             // 
-            this.btnVoar.Location = new System.Drawing.Point(719, 88);
+            this.btnVoar.BackColor = System.Drawing.Color.IndianRed;
+            this.btnVoar.Location = new System.Drawing.Point(863, 85);
+            this.btnVoar.Margin = new System.Windows.Forms.Padding(4);
             this.btnVoar.Name = "btnVoar";
-            this.btnVoar.Size = new System.Drawing.Size(75, 23);
+            this.btnVoar.Size = new System.Drawing.Size(100, 28);
             this.btnVoar.TabIndex = 5;
             this.btnVoar.Text = "Voar";
-            this.btnVoar.UseVisualStyleBackColor = true;
+            this.btnVoar.UseVisualStyleBackColor = false;
             this.btnVoar.Click += new System.EventHandler(this.btnVoar_Click);
             // 
             // gbOviparos
             // 
+            this.gbOviparos.BackColor = System.Drawing.Color.OliveDrab;
             this.gbOviparos.Controls.Add(this.btnChocar);
             this.gbOviparos.Controls.Add(this.btnBotar);
-            this.gbOviparos.Location = new System.Drawing.Point(485, 127);
+            this.gbOviparos.Location = new System.Drawing.Point(536, 113);
+            this.gbOviparos.Margin = new System.Windows.Forms.Padding(4);
             this.gbOviparos.Name = "gbOviparos";
-            this.gbOviparos.Size = new System.Drawing.Size(200, 75);
+            this.gbOviparos.Padding = new System.Windows.Forms.Padding(4);
+            this.gbOviparos.Size = new System.Drawing.Size(267, 92);
             this.gbOviparos.TabIndex = 20;
             this.gbOviparos.TabStop = false;
             this.gbOviparos.Text = "Ovíparos";
             // 
             // btnChocar
             // 
-            this.btnChocar.Location = new System.Drawing.Point(99, 33);
+            this.btnChocar.Location = new System.Drawing.Point(132, 41);
+            this.btnChocar.Margin = new System.Windows.Forms.Padding(4);
             this.btnChocar.Name = "btnChocar";
-            this.btnChocar.Size = new System.Drawing.Size(75, 23);
+            this.btnChocar.Size = new System.Drawing.Size(100, 28);
             this.btnChocar.TabIndex = 2;
             this.btnChocar.Text = "Chocar";
             this.btnChocar.UseVisualStyleBackColor = true;
@@ -175,9 +202,10 @@
             // 
             // btnBotar
             // 
-            this.btnBotar.Location = new System.Drawing.Point(18, 33);
+            this.btnBotar.Location = new System.Drawing.Point(24, 41);
+            this.btnBotar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBotar.Name = "btnBotar";
-            this.btnBotar.Size = new System.Drawing.Size(75, 23);
+            this.btnBotar.Size = new System.Drawing.Size(100, 28);
             this.btnBotar.TabIndex = 1;
             this.btnBotar.Text = "Botar";
             this.btnBotar.UseVisualStyleBackColor = true;
@@ -185,42 +213,50 @@
             // 
             // btnAtacar
             // 
-            this.btnAtacar.Location = new System.Drawing.Point(719, 59);
+            this.btnAtacar.BackColor = System.Drawing.Color.IndianRed;
+            this.btnAtacar.Location = new System.Drawing.Point(863, 49);
+            this.btnAtacar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAtacar.Name = "btnAtacar";
-            this.btnAtacar.Size = new System.Drawing.Size(75, 23);
+            this.btnAtacar.Size = new System.Drawing.Size(100, 28);
             this.btnAtacar.TabIndex = 0;
             this.btnAtacar.Text = "Atacar";
-            this.btnAtacar.UseVisualStyleBackColor = true;
+            this.btnAtacar.UseVisualStyleBackColor = false;
             this.btnAtacar.Click += new System.EventHandler(this.btnAtacar_Click);
             // 
             // btnAmamentar
             // 
-            this.btnAmamentar.Location = new System.Drawing.Point(719, 30);
+            this.btnAmamentar.BackColor = System.Drawing.Color.IndianRed;
+            this.btnAmamentar.Location = new System.Drawing.Point(863, 13);
+            this.btnAmamentar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAmamentar.Name = "btnAmamentar";
-            this.btnAmamentar.Size = new System.Drawing.Size(75, 23);
+            this.btnAmamentar.Size = new System.Drawing.Size(100, 28);
             this.btnAmamentar.TabIndex = 23;
             this.btnAmamentar.Text = "Amamentar";
-            this.btnAmamentar.UseVisualStyleBackColor = true;
+            this.btnAmamentar.UseVisualStyleBackColor = false;
             this.btnAmamentar.Click += new System.EventHandler(this.btnAmamentar_Click);
             // 
             // userControlDetalhes1
             // 
             this.userControlDetalhes1.Carnivoro = "label8";
+            this.userControlDetalhes1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.userControlDetalhes1.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userControlDetalhes1.Idade = "label10";
             this.userControlDetalhes1.Imagem = null;
-            this.userControlDetalhes1.Location = new System.Drawing.Point(12, 12);
+            this.userControlDetalhes1.Location = new System.Drawing.Point(0, 0);
+            this.userControlDetalhes1.Margin = new System.Windows.Forms.Padding(6);
             this.userControlDetalhes1.Name = "userControlDetalhes1";
             this.userControlDetalhes1.Nome = "label5";
             this.userControlDetalhes1.Peconhento = "label11";
             this.userControlDetalhes1.Sexo = "label9";
-            this.userControlDetalhes1.Size = new System.Drawing.Size(409, 336);
-            this.userControlDetalhes1.TabIndex = 0;
+            this.userControlDetalhes1.Size = new System.Drawing.Size(486, 476);
+            this.userControlDetalhes1.TabIndex = 24;
             // 
             // DetalhesMamiferos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(977, 476);
             this.Controls.Add(this.btnAtacar);
             this.Controls.Add(this.btnVoar);
             this.Controls.Add(this.btnAmamentar);
@@ -233,6 +269,9 @@
             this.Controls.Add(this.lblMamas);
             this.Controls.Add(this.lblPossuiPelo);
             this.Controls.Add(this.userControlDetalhes1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DetalhesMamiferos";
             this.Text = "DetalhesMamiferos";
             this.gbComuns.ResumeLayout(false);
@@ -243,8 +282,6 @@
         }
 
         #endregion
-
-        private UserControls.userControlDetalhes userControlDetalhes1;
         private System.Windows.Forms.Label lblPossuiPelo;
         private System.Windows.Forms.Label lblMamas;
         private System.Windows.Forms.Label lblCorPelo;
@@ -261,5 +298,6 @@
         private System.Windows.Forms.Button btnBotar;
         private System.Windows.Forms.Button btnAtacar;
         private System.Windows.Forms.Button btnAmamentar;
+        private UserControls.userControlDetalhes userControlDetalhes1;
     }
 }

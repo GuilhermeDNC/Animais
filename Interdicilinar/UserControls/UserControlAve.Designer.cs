@@ -36,7 +36,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 74);
+            this.label1.Location = new System.Drawing.Point(3, 81);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 2;
@@ -44,9 +44,9 @@
             // 
             // txtCorPenas
             // 
-            this.txtCorPenas.Location = new System.Drawing.Point(67, 71);
+            this.txtCorPenas.Location = new System.Drawing.Point(76, 74);
             this.txtCorPenas.Name = "txtCorPenas";
-            this.txtCorPenas.Size = new System.Drawing.Size(103, 20);
+            this.txtCorPenas.Size = new System.Drawing.Size(96, 20);
             this.txtCorPenas.TabIndex = 3;
             this.txtCorPenas.TextChanged += new System.EventHandler(this.txtCorPenas_TextChanged);
             // 

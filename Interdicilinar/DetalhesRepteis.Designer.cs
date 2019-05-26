@@ -48,29 +48,32 @@
             // 
             // btnAtacar
             // 
-            this.btnAtacar.Location = new System.Drawing.Point(707, 61);
+            this.btnAtacar.BackColor = System.Drawing.Color.IndianRed;
+            this.btnAtacar.Location = new System.Drawing.Point(739, 32);
             this.btnAtacar.Name = "btnAtacar";
             this.btnAtacar.Size = new System.Drawing.Size(75, 23);
             this.btnAtacar.TabIndex = 25;
             this.btnAtacar.Text = "Atacar";
-            this.btnAtacar.UseVisualStyleBackColor = true;
+            this.btnAtacar.UseVisualStyleBackColor = false;
             this.btnAtacar.Click += new System.EventHandler(this.btnAtacar_Click);
             // 
             // btnVoar
             // 
-            this.btnVoar.Location = new System.Drawing.Point(707, 90);
+            this.btnVoar.BackColor = System.Drawing.Color.IndianRed;
+            this.btnVoar.Location = new System.Drawing.Point(739, 61);
             this.btnVoar.Name = "btnVoar";
             this.btnVoar.Size = new System.Drawing.Size(75, 23);
             this.btnVoar.TabIndex = 26;
             this.btnVoar.Text = "Voar";
-            this.btnVoar.UseVisualStyleBackColor = true;
+            this.btnVoar.UseVisualStyleBackColor = false;
             this.btnVoar.Click += new System.EventHandler(this.btnVoar_Click);
             // 
             // gbOviparos
             // 
+            this.gbOviparos.BackColor = System.Drawing.Color.OliveDrab;
             this.gbOviparos.Controls.Add(this.btnChocar);
             this.gbOviparos.Controls.Add(this.btnBotar);
-            this.gbOviparos.Location = new System.Drawing.Point(473, 129);
+            this.gbOviparos.Location = new System.Drawing.Point(502, 103);
             this.gbOviparos.Name = "gbOviparos";
             this.gbOviparos.Size = new System.Drawing.Size(200, 75);
             this.gbOviparos.TabIndex = 28;
@@ -99,10 +102,11 @@
             // 
             // gbComuns
             // 
+            this.gbComuns.BackColor = System.Drawing.Color.DimGray;
             this.gbComuns.Controls.Add(this.btnComunicar);
             this.gbComuns.Controls.Add(this.btnMovimentar);
             this.gbComuns.Controls.Add(this.btnAlimentar);
-            this.gbComuns.Location = new System.Drawing.Point(441, 32);
+            this.gbComuns.Location = new System.Drawing.Point(473, 22);
             this.gbComuns.Name = "gbComuns";
             this.gbComuns.Size = new System.Drawing.Size(260, 75);
             this.gbComuns.TabIndex = 27;
@@ -142,49 +146,56 @@
             // userControlDetalhes1
             // 
             this.userControlDetalhes1.Carnivoro = "label8";
+            this.userControlDetalhes1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.userControlDetalhes1.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userControlDetalhes1.Idade = "label10";
             this.userControlDetalhes1.Imagem = null;
-            this.userControlDetalhes1.Location = new System.Drawing.Point(12, 12);
+            this.userControlDetalhes1.Location = new System.Drawing.Point(0, 0);
+            this.userControlDetalhes1.Margin = new System.Windows.Forms.Padding(6);
             this.userControlDetalhes1.Name = "userControlDetalhes1";
             this.userControlDetalhes1.Nome = "label5";
             this.userControlDetalhes1.Peconhento = "label11";
             this.userControlDetalhes1.Sexo = "label9";
-            this.userControlDetalhes1.Size = new System.Drawing.Size(409, 336);
+            this.userControlDetalhes1.Size = new System.Drawing.Size(464, 507);
             this.userControlDetalhes1.TabIndex = 0;
             // 
             // lblTemCasco
             // 
             this.lblTemCasco.AutoSize = true;
-            this.lblTemCasco.Location = new System.Drawing.Point(175, 190);
+            this.lblTemCasco.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTemCasco.Location = new System.Drawing.Point(217, 305);
             this.lblTemCasco.Name = "lblTemCasco";
-            this.lblTemCasco.Size = new System.Drawing.Size(64, 13);
+            this.lblTemCasco.Size = new System.Drawing.Size(115, 26);
             this.lblTemCasco.TabIndex = 29;
             this.lblTemCasco.Text = "Tem Casco:";
             // 
             // lblTemEscamasValor
             // 
             this.lblTemEscamasValor.AutoSize = true;
-            this.lblTemEscamasValor.Location = new System.Drawing.Point(259, 219);
+            this.lblTemEscamasValor.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTemEscamasValor.Location = new System.Drawing.Point(349, 342);
             this.lblTemEscamasValor.Name = "lblTemEscamasValor";
-            this.lblTemEscamasValor.Size = new System.Drawing.Size(64, 13);
+            this.lblTemEscamasValor.Size = new System.Drawing.Size(115, 26);
             this.lblTemEscamasValor.TabIndex = 30;
             this.lblTemEscamasValor.Text = "Tem Casco:";
             // 
             // lblTemCascoValor
             // 
             this.lblTemCascoValor.AutoSize = true;
-            this.lblTemCascoValor.Location = new System.Drawing.Point(259, 191);
+            this.lblTemCascoValor.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTemCascoValor.Location = new System.Drawing.Point(338, 305);
             this.lblTemCascoValor.Name = "lblTemCascoValor";
-            this.lblTemCascoValor.Size = new System.Drawing.Size(64, 13);
+            this.lblTemCascoValor.Size = new System.Drawing.Size(115, 26);
             this.lblTemCascoValor.TabIndex = 31;
             this.lblTemCascoValor.Text = "Tem Casco:";
             // 
             // lblTemEscamas
             // 
             this.lblTemEscamas.AutoSize = true;
-            this.lblTemEscamas.Location = new System.Drawing.Point(175, 219);
+            this.lblTemEscamas.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTemEscamas.Location = new System.Drawing.Point(214, 342);
             this.lblTemEscamas.Name = "lblTemEscamas";
-            this.lblTemEscamas.Size = new System.Drawing.Size(76, 13);
+            this.lblTemEscamas.Size = new System.Drawing.Size(140, 26);
             this.lblTemEscamas.TabIndex = 32;
             this.lblTemEscamas.Text = "Tem escamas:";
             // 
@@ -192,7 +203,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.LightGreen;
+            this.ClientSize = new System.Drawing.Size(823, 507);
             this.Controls.Add(this.lblTemEscamas);
             this.Controls.Add(this.lblTemCascoValor);
             this.Controls.Add(this.lblTemEscamasValor);
@@ -202,6 +214,7 @@
             this.Controls.Add(this.gbOviparos);
             this.Controls.Add(this.gbComuns);
             this.Controls.Add(this.userControlDetalhes1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "DetalhesRepteis";
             this.Text = "DetalhesRepteis";
             this.gbOviparos.ResumeLayout(false);

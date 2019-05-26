@@ -103,16 +103,11 @@ namespace Interdicilinar
 
            Pato pato = new Pato();
            pato.Nome = "Donald";
-           pato.Nascimento = DateTime.Parse("01/09/2021");
+           pato.Nascimento = DateTime.Parse("01/09/2018");
            pato.CorPena = "Preto e amarelo";
            pato.Sexo = 'M';
            pato.VelocidadeDoVoo = 65;
            pato.AltitudeMaximaEmMetros = 80;
-
-            Peixe peixe = new Peixe();
-            peixe.Nome = "Nemo";
-            peixe.Nascimento = DateTime.Parse("09/11/1950");
-            peixe.Sexo = 'M';
 
             Pinguim pinguim = new Pinguim();
             pinguim.Nome = "Happy Feet";
@@ -148,7 +143,6 @@ namespace Interdicilinar
             arvoreBin.Insere(morcego);
             arvoreBin.Insere(ornitorrinco);
             arvoreBin.Insere(pato);
-            arvoreBin.Insere(peixe);
             arvoreBin.Insere(pinguim);
             arvoreBin.Insere(pombo);
             arvoreBin.Insere(tartaruga);
@@ -156,30 +150,46 @@ namespace Interdicilinar
             animais = UtilExtensions.arvore.ListagemEmOrdem();
             animaisAux = animais.Listar();
 
-            EnableButtons(false, false, false, false, false,false);
-        }
+            btnDetalhes.Visible = false;
 
-        public List animais;
-        public Animal[] animaisAux;
-        public List listaAux = new List();
-       
-        private void rbNome_CheckedChanged(object sender, EventArgs e)
-        {
-            EnableButtons(false, false, false, false, false, false);
             listaAux = new List();
 
             lbAnimais.Items.Clear();
             foreach (Animal animal in animais.Listar())
             {
                 listaAux.InserirNoFim(animal);
-                lbAnimais.Items.Add(animal.Nome + " - " + animal.Sexo + " - " + animal.Nascimento);
+                lbAnimais.Items.Add(animal.Nome + " - " + animal.Sexo + " - " + animal.Idade() + " anos");
+            }
+            animaisAux = listaAux.Listar();
+
+        }
+
+        public List animais;
+        public Animal[] animaisAux;
+        public List listaAux = new List();
+
+
+        private void rbNome_CheckedChanged(object sender, EventArgs e)
+        {
+            pbAnimal.ImageLocation = "";
+            btnDetalhes.Visible = false;
+
+            listaAux = new List();
+
+            lbAnimais.Items.Clear();
+            foreach (Animal animal in animais.Listar())
+            {
+                listaAux.InserirNoFim(animal);
+                lbAnimais.Items.Add(animal.Nome + " - " + animal.Sexo + " - " + animal.Idade() + " anos");
             }
             animaisAux = listaAux.Listar();
         }
 
         private void rbMamiferos_CheckedChanged(object sender, EventArgs e)
         {
-            EnableButtons(false, false, false, false, false, false);
+            pbAnimal.ImageLocation = "";
+            btnDetalhes.Visible = false;
+
             listaAux = new List();
 
             lbAnimais.Items.Clear();
@@ -188,7 +198,7 @@ namespace Interdicilinar
                 if (animal is Mamifero)
                 {
                     listaAux.InserirNoFim(animal);
-                    lbAnimais.Items.Add(animal.Nome + " - " + animal.Sexo + " - " + animal.Nascimento);
+                    lbAnimais.Items.Add(animal.Nome + " - " + animal.Sexo + " - " + animal.Idade() + " anos");
                 }
             }
             animaisAux = listaAux.Listar();
@@ -196,7 +206,9 @@ namespace Interdicilinar
 
         private void rbOviparos_CheckedChanged(object sender, EventArgs e)
         {
-            EnableButtons(false, false, false, false, false, false);
+            pbAnimal.ImageLocation = "";
+            btnDetalhes.Visible = false;
+
             listaAux = new List();
 
             lbAnimais.Items.Clear();
@@ -205,7 +217,7 @@ namespace Interdicilinar
                 if (animal is IOviparo)
                 {
                     listaAux.InserirNoFim(animal);
-                    lbAnimais.Items.Add(animal.Nome + " - " + animal.Sexo + " - " + animal.Nascimento);
+                    lbAnimais.Items.Add(animal.Nome + " - " + animal.Sexo + " - " + animal.Idade() + " anos");
                 }
             }
 
@@ -214,7 +226,9 @@ namespace Interdicilinar
 
         private void rbAquaticos_CheckedChanged(object sender, EventArgs e)
         {
-            EnableButtons(false, false, false, false, false, false);
+            pbAnimal.ImageLocation = "";
+            btnDetalhes.Visible = false;
+
             listaAux = new List();
 
             lbAnimais.Items.Clear();
@@ -223,7 +237,7 @@ namespace Interdicilinar
                 if (animal is IAquatico)
                 {
                     listaAux.InserirNoFim(animal);
-                    lbAnimais.Items.Add(animal.Nome + " - " + animal.Sexo + " - " + animal.Nascimento);
+                    lbAnimais.Items.Add(animal.Nome + " - " + animal.Sexo + " - " + animal.Idade() + " anos");
                 }
             }
 
@@ -232,7 +246,9 @@ namespace Interdicilinar
 
         private void rbVoar_CheckedChanged(object sender, EventArgs e)
         {
-            EnableButtons(false, false, false, false, false, false);
+            pbAnimal.ImageLocation = "";
+            btnDetalhes.Visible = false;
+
             listaAux = new List();
 
             lbAnimais.Items.Clear();
@@ -241,7 +257,7 @@ namespace Interdicilinar
                 if (animal is IVoar)
                 {
                     listaAux.InserirNoFim(animal);
-                    lbAnimais.Items.Add(animal.Nome + " - " + animal.Sexo + " - " + animal.Nascimento);
+                    lbAnimais.Items.Add(animal.Nome + " - " + animal.Sexo + " - " + animal.Idade() + " anos");
                 }
             }
             animaisAux = listaAux.Listar();
@@ -249,12 +265,15 @@ namespace Interdicilinar
 
         private void rbIdade_CheckedChanged(object sender, EventArgs e)
         {
-            EnableButtons(false, false, false, false, false, false);
+            pbAnimal.ImageLocation = "";
+            //Implementar listagem por idade
         }
 
         private void rbPredadores_CheckedChanged(object sender, EventArgs e)
         {
-            EnableButtons(false, false, false, false, false, false);
+            pbAnimal.ImageLocation = "";
+            btnDetalhes.Visible = false;
+
             listaAux = new List();
 
             lbAnimais.Items.Clear();
@@ -263,7 +282,7 @@ namespace Interdicilinar
                 if (animal is IPredador)
                 {
                     listaAux.InserirNoFim(animal);
-                    lbAnimais.Items.Add(animal.Nome + " - " + animal.Sexo + " - " + animal.Nascimento);
+                    lbAnimais.Items.Add(animal.Nome + " - " + animal.Sexo + " - " + animal.Idade());
                 }
             }
 
@@ -273,25 +292,27 @@ namespace Interdicilinar
         Animal animalAtual;
         private void lbAnimais_SelectedValueChanged(object sender, EventArgs e)
         {
-            bool voador = false;
-            bool predador = false;
-            bool oviparo = false;
-            bool ave = false;
-            bool mamifero = false;
+            btnDetalhes.Visible = true;
+
+            //bool voador = false;
+            //bool predador = false;
+            //bool oviparo = false;
+            //bool ave = false;
+            //bool mamifero = false;
 
             animalAtual = animaisAux[lbAnimais.SelectedIndex];
             UtilExtensions.animalAtual = animalAtual;
 
-            if (animalAtual is IVoar)
-                voador = true;
-            if (animalAtual is IPredador)
-                predador = true;
-            if (animalAtual is IOviparo)
-                oviparo = true;
-            if (animalAtual is Ave)
-                ave = true;
-            if (animalAtual is Mamifero)
-                mamifero = true;
+            //if (animalAtual is IVoar)
+            //    voador = true;
+            //if (animalAtual is IPredador)
+            //    predador = true;
+            //if (animalAtual is IOviparo)
+            //    oviparo = true;
+            //if (animalAtual is Ave)
+            //    ave = true;
+            //if (animalAtual is Mamifero)
+            //    mamifero = true;
 
             if (animalAtual is Baleia)
                 SetImage(@"../../imagens-animais/baleia/baleia.jpg");
@@ -322,63 +343,6 @@ namespace Interdicilinar
             else if (animalAtual is Tartaruga)
                 SetImage(@"../../imagens-animais/tartaruga/tartaruga.jpg");
 
-            EnableButtons(true, voador, predador, oviparo, ave, mamifero);
-        }
-
-       
-        private void btnMovimentar_Click(object sender, EventArgs e)
-        {
-            pbAnimal.ImageLocation = animalAtual.Movimentar();
-        }
-
-        private void btnComunicar_Click(object sender, EventArgs e)
-        {
-            pbAnimal.ImageLocation = animalAtual.Comunicar();
-        }
-
-        private void btnAlimentar_Click(object sender, EventArgs e)
-        {
-            pbAnimal.ImageLocation = animalAtual.Alimentar();
-        }
-
-        private void btnVoar_Click(object sender, EventArgs e)
-        {
-            pbAnimal.ImageLocation = (animalAtual as IVoar).Voar();
-        }
-
-        private void btnBotar_Click(object sender, EventArgs e)
-        {
-            pbAnimal.ImageLocation = (animalAtual as IOviparo).Botar();
-        }
-
-        private void btnChocar_Click(object sender, EventArgs e)
-        {
-            pbAnimal.ImageLocation = (animalAtual as IOviparo).Chocar();
-        }
-
-        private void btnAtacar_Click(object sender, EventArgs e)
-        {
-            pbAnimal.ImageLocation = (animalAtual as IPredador).Ataque();
-        }
-
-        private void btnCiscar_Click(object sender, EventArgs e)
-        {
-            pbAnimal.ImageLocation = (animalAtual as Ave).Ciscar();
-        }
-
-        private void btnAmamentar_Click(object sender, EventArgs e)
-        {
-            pbAnimal.ImageLocation = (animalAtual as Mamifero).Amamentar();
-        }
-
-        private void EnableButtons(bool comuns, bool voador, bool predador, bool oviparo, bool ave, bool mamifero)
-        {
-            gbComuns.Visible = comuns;
-            gbVoadores.Visible = voador;
-            gbPredadores.Visible = predador;
-            gbOviparos.Visible = oviparo;
-            btnCiscar.Visible = ave;
-            btnAmamentar.Visible = mamifero;
         }
 
         private void btnDetalhes_Click(object sender, EventArgs e)
@@ -393,22 +357,11 @@ namespace Interdicilinar
                 DetalhesAves winDetalhesAves = new DetalhesAves();
                 winDetalhesAves.ShowDialog();
             }
-            else if ((UtilExtensions.animalAtual is Reptil) || (UtilExtensions.animalAtual is Peixe))
+            else if ((UtilExtensions.animalAtual is Reptil))
             {
                 DetalhesRepteis winDetalhesRepteis = new DetalhesRepteis();
                 winDetalhesRepteis.ShowDialog();
             }
-        }
-
-        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Cadastrar formCadastrar = new Cadastrar(this);
-            formCadastrar.ShowDialog();
-            
-            rbIdade.Checked = true;
-            rbIdade.Checked = false;
-            lbAnimais.Items.Clear();
-
         }
 
         private void SetImage(string caminho)
@@ -416,5 +369,17 @@ namespace Interdicilinar
             pbAnimal.ImageLocation = caminho;
             UtilExtensions.imagemAtual = caminho;
         }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            Cadastrar formCadastrar = new Cadastrar(this);
+            formCadastrar.ShowDialog();
+
+            rbIdade.Checked = true;
+            rbIdade.Checked = false;
+            lbAnimais.Items.Clear();
+        }
+
+      
     }
 }

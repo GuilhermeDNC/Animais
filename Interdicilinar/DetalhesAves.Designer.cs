@@ -50,77 +50,87 @@
             // userControlDetalhes1
             // 
             this.userControlDetalhes1.Carnivoro = "label8";
+            this.userControlDetalhes1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.userControlDetalhes1.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userControlDetalhes1.Idade = "label10";
             this.userControlDetalhes1.Imagem = null;
-            this.userControlDetalhes1.Location = new System.Drawing.Point(12, 12);
+            this.userControlDetalhes1.Location = new System.Drawing.Point(0, 0);
+            this.userControlDetalhes1.Margin = new System.Windows.Forms.Padding(6);
             this.userControlDetalhes1.Name = "userControlDetalhes1";
             this.userControlDetalhes1.Nome = "label5";
             this.userControlDetalhes1.Peconhento = "label11";
             this.userControlDetalhes1.Sexo = "label9";
-            this.userControlDetalhes1.Size = new System.Drawing.Size(409, 336);
+            this.userControlDetalhes1.Size = new System.Drawing.Size(442, 508);
             this.userControlDetalhes1.TabIndex = 0;
             // 
             // lblRapina
             // 
             this.lblRapina.AutoSize = true;
-            this.lblRapina.Location = new System.Drawing.Point(232, 184);
+            this.lblRapina.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRapina.Location = new System.Drawing.Point(214, 306);
             this.lblRapina.Name = "lblRapina";
-            this.lblRapina.Size = new System.Drawing.Size(44, 13);
+            this.lblRapina.Size = new System.Drawing.Size(80, 26);
             this.lblRapina.TabIndex = 1;
             this.lblRapina.Text = "Rapina:";
             // 
             // lblRapinaValor
             // 
             this.lblRapinaValor.AutoSize = true;
-            this.lblRapinaValor.Location = new System.Drawing.Point(282, 184);
+            this.lblRapinaValor.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRapinaValor.Location = new System.Drawing.Point(300, 306);
             this.lblRapinaValor.Name = "lblRapinaValor";
-            this.lblRapinaValor.Size = new System.Drawing.Size(35, 13);
+            this.lblRapinaValor.Size = new System.Drawing.Size(67, 26);
             this.lblRapinaValor.TabIndex = 2;
             this.lblRapinaValor.Text = "label1";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(232, 211);
+            this.label1.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(214, 342);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 13);
+            this.label1.Size = new System.Drawing.Size(146, 26);
             this.label1.TabIndex = 3;
             this.label1.Text = "Cor das Penas:";
             // 
             // lblCorPenas
             // 
             this.lblCorPenas.AutoSize = true;
-            this.lblCorPenas.Location = new System.Drawing.Point(317, 211);
+            this.lblCorPenas.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorPenas.Location = new System.Drawing.Point(353, 342);
             this.lblCorPenas.Name = "lblCorPenas";
-            this.lblCorPenas.Size = new System.Drawing.Size(79, 13);
+            this.lblCorPenas.Size = new System.Drawing.Size(146, 26);
             this.lblCorPenas.TabIndex = 4;
             this.lblCorPenas.Text = "Cor das Penas:";
             // 
             // btnAtacar
             // 
-            this.btnAtacar.Location = new System.Drawing.Point(707, 57);
+            this.btnAtacar.BackColor = System.Drawing.Color.IndianRed;
+            this.btnAtacar.Location = new System.Drawing.Point(717, 57);
             this.btnAtacar.Name = "btnAtacar";
             this.btnAtacar.Size = new System.Drawing.Size(75, 23);
             this.btnAtacar.TabIndex = 21;
             this.btnAtacar.Text = "Atacar";
-            this.btnAtacar.UseVisualStyleBackColor = true;
+            this.btnAtacar.UseVisualStyleBackColor = false;
             this.btnAtacar.Click += new System.EventHandler(this.btnAtacar_Click);
             // 
             // btnVoar
             // 
-            this.btnVoar.Location = new System.Drawing.Point(707, 86);
+            this.btnVoar.BackColor = System.Drawing.Color.IndianRed;
+            this.btnVoar.Location = new System.Drawing.Point(717, 86);
             this.btnVoar.Name = "btnVoar";
             this.btnVoar.Size = new System.Drawing.Size(75, 23);
             this.btnVoar.TabIndex = 22;
             this.btnVoar.Text = "Voar";
-            this.btnVoar.UseVisualStyleBackColor = true;
+            this.btnVoar.UseVisualStyleBackColor = false;
             this.btnVoar.Click += new System.EventHandler(this.btnVoar_Click);
             // 
             // gbOviparos
             // 
+            this.gbOviparos.BackColor = System.Drawing.Color.OliveDrab;
             this.gbOviparos.Controls.Add(this.btnChocar);
             this.gbOviparos.Controls.Add(this.btnBotar);
-            this.gbOviparos.Location = new System.Drawing.Point(473, 125);
+            this.gbOviparos.Location = new System.Drawing.Point(479, 109);
             this.gbOviparos.Name = "gbOviparos";
             this.gbOviparos.Size = new System.Drawing.Size(200, 75);
             this.gbOviparos.TabIndex = 24;
@@ -149,10 +159,11 @@
             // 
             // gbComuns
             // 
+            this.gbComuns.BackColor = System.Drawing.Color.DimGray;
             this.gbComuns.Controls.Add(this.btnComunicar);
             this.gbComuns.Controls.Add(this.btnMovimentar);
             this.gbComuns.Controls.Add(this.btnAlimentar);
-            this.gbComuns.Location = new System.Drawing.Point(441, 28);
+            this.gbComuns.Location = new System.Drawing.Point(451, 28);
             this.gbComuns.Name = "gbComuns";
             this.gbComuns.Size = new System.Drawing.Size(260, 75);
             this.gbComuns.TabIndex = 23;
@@ -191,19 +202,21 @@
             // 
             // bntCiscar
             // 
-            this.bntCiscar.Location = new System.Drawing.Point(707, 28);
+            this.bntCiscar.BackColor = System.Drawing.Color.IndianRed;
+            this.bntCiscar.Location = new System.Drawing.Point(717, 28);
             this.bntCiscar.Name = "bntCiscar";
             this.bntCiscar.Size = new System.Drawing.Size(75, 23);
             this.bntCiscar.TabIndex = 25;
             this.bntCiscar.Text = "Ciscar";
-            this.bntCiscar.UseVisualStyleBackColor = true;
+            this.bntCiscar.UseVisualStyleBackColor = false;
             this.bntCiscar.Click += new System.EventHandler(this.bntCiscar_Click);
             // 
             // DetalhesAves
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.Peru;
+            this.ClientSize = new System.Drawing.Size(800, 508);
             this.Controls.Add(this.bntCiscar);
             this.Controls.Add(this.btnAtacar);
             this.Controls.Add(this.btnVoar);
@@ -214,6 +227,7 @@
             this.Controls.Add(this.lblRapinaValor);
             this.Controls.Add(this.lblRapina);
             this.Controls.Add(this.userControlDetalhes1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "DetalhesAves";
             this.Text = "DetalhesAves";
             this.gbOviparos.ResumeLayout(false);

@@ -53,6 +53,7 @@
     <Compile Include="Animais\IPredador.cs" />
     <Compile Include="Animais\IVoar.cs" />
     <Compile Include="Animais\Mamifero.cs" />
+    <Compile Include="Animais\Peixe.cs" />
     <Compile Include="Animais\Reptil.cs" />
     <Compile Include="Bichos\Baleia.cs" />
     <Compile Include="Bichos\Cachorro.cs" />
@@ -64,7 +65,6 @@
     <Compile Include="Bichos\Pato.cs" />
     <Compile Include="Bichos\Gato.cs" />
     <Compile Include="Bichos\Morcego.cs" />
-    <Compile Include="Bichos\Peixe.cs" />
     <Compile Include="Bichos\Pinguim.cs" />
     <Compile Include="Bichos\Pombo.cs" />
     <Compile Include="Bichos\Tartaruga.cs" />
