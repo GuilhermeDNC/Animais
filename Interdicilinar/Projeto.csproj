@@ -65,7 +65,7 @@
     <Compile Include="Bichos\Gato.cs" />
     <Compile Include="Bichos\Morcego.cs" />
     <Compile Include="Bichos\Peixe.cs" />
-    <Compile Include="Bichos\Pinguin.cs" />
+    <Compile Include="Bichos\Pinguim.cs" />
     <Compile Include="Bichos\Pombo.cs" />
     <Compile Include="Bichos\Tartaruga.cs" />
     <Compile Include="Cadastrar.cs">

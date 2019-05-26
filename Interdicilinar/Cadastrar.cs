@@ -149,8 +149,6 @@ namespace Interdicilinar
                 else if (rbMorcego.Checked)
                 {
                     animal = new Morcego();
-                    (animal as Morcego).AltitudeMaximaEmMetros = int.Parse(txtAltitude.Text);
-                    (animal as Morcego).VelocidadeDoVoo = double.Parse(txtVelocidade.Text);
                 }
                 else if (rbOrnitorrinco.Checked)
                 {
@@ -159,6 +157,17 @@ namespace Interdicilinar
                 else
                 {
                     throw new Exception("Nenhuma opção foi selecionada...");
+                }
+
+                if (animal is IVoar)
+                {
+                    if (int.Parse(txtAltitude.Text) < 0)
+                        throw new Exception("a Altitude não pode ser menor que zero...");
+                    if (int.Parse(txtVelocidade.Text) < 0)
+                        throw new Exception("a Velocidade não pode ser menor que zero...");
+
+                    (animal as IVoar).AltitudeMaximaEmMetros = int.Parse(txtAltitude.Text);
+                    (animal as IVoar).VelocidadeDoVoo = int.Parse(txtVelocidade.Text);
                 }
 
                 CadastrarDadosMamifero(animal);
@@ -180,42 +189,37 @@ namespace Interdicilinar
                 if (rbCoruja.Checked)
                 {
                     animal = new Coruja();
-                    (animal as Coruja).VelocidadeDoVoo = double.Parse(txtVelocidadeAve.Text);
-                    (animal as Coruja).AltitudeMaximaEmMetros = int.Parse(txtAltitudeAve.Text);
                 }
                 else if (rbGaviao.Checked)
                 {
                     animal = new Gaviao();
-                    (animal as Gaviao).AltitudeMaximaEmMetros = int.Parse(txtAltitudeAve.Text);
-                    (animal as Gaviao).VelocidadeDoVoo = double.Parse(txtVelocidadeAve.Text);
                 }
                 else if (rbPato.Checked)
                 {
                     animal = new Pato();
-
-                    (animal as Pato).AltitudeMaximaEmMetros = int.Parse(txtAltitudeAve.Text);
-                    (animal as Pato).VelocidadeDoVoo = double.Parse(txtVelocidadeAve.Text);
                 }
                 else if (rbPinguim.Checked)
                 {
-                    animal = new Pinguin();
+                    animal = new Pinguim();
                 }
                 else if (rbPombo.Checked)
                 {
                     animal = new Pombo();
-                    try
-                    {
-                        (animal as Pombo).AltitudeMaximaEmMetros = int.Parse(txtAltitudeAve.Text);
-                        (animal as Pombo).VelocidadeDoVoo = double.Parse(txtVelocidadeAve.Text);
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Insira valores válidos...");
-                    }
                 }
                 else
                 {
                     throw new Exception("Nenhuma opção foi marcada...");
+                }
+
+                if (animal is IVoar)
+                {
+                    if (int.Parse(txtAltitudeAve.Text) < 0)
+                        throw new Exception("a Altitude não pode ser menor que zero...");
+                    if (int.Parse(txtVelocidadeAve.Text) < 0)
+                        throw new Exception("a Velocidade não pode ser menor que zero...");
+
+                    (animal as IVoar).AltitudeMaximaEmMetros = int.Parse(txtAltitudeAve.Text);
+                    (animal as IVoar).VelocidadeDoVoo = int.Parse(txtVelocidadeAve.Text);
                 }
 
                 CadastrarDadosAve(animal);
@@ -224,7 +228,7 @@ namespace Interdicilinar
                 MessageBox.Show("Cadastrado com sucesso...");
                 LimparForm(this);
             }
-            catch(Exception erro)
+            catch (Exception erro)
             {
                 MessageBox.Show(erro.Message);
             }
@@ -272,7 +276,11 @@ namespace Interdicilinar
                 animal.CorDoPelo = "";
 
             if (DateTime.TryParse(userControlMamiferos1.Nascimento, out nascimento))
+            {
+                if (nascimento > DateTime.Now)
+                    throw new Exception("O nascimento não pode ser maior que a data atual...");
                 animal.Nascimento = nascimento;
+            }
             else
                 throw new Exception("A data não foi inserida em um formato correto...");
 
@@ -294,7 +302,12 @@ namespace Interdicilinar
                 animal.CorPena = userControlAve1.CorPenas;
 
             if (DateTime.TryParse(userControlAve1.Nascimento, out nascimento))
+            {
+                if (nascimento > DateTime.Now)
+                    throw new Exception("O nascimento não pode ser maior que a data atual...");
                 animal.Nascimento = nascimento;
+            }
+
             else
                 throw new Exception("Insira o campo data em um valor válido...");
 
@@ -319,7 +332,11 @@ namespace Interdicilinar
             }
 
             if (DateTime.TryParse(userControlReptil.TextoNascimento, out nascimento))
+            {
+                if (nascimento > DateTime.Now)
+                    throw new Exception("O nascimento não pode ser maior que a data atual...");
                 animal.Nascimento = nascimento;
+            }
             else
                 throw new Exception("Insira uma data válida...");
 

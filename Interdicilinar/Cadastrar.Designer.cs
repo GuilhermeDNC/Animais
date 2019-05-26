@@ -405,7 +405,7 @@
             // 
             this.userControlReptil.BoolCarnivoro = true;
             this.userControlReptil.BoolPeconhento = false;
-            this.userControlReptil.BoolSexo = 'F';
+            this.userControlReptil.BoolSexo = 'M';
             this.userControlReptil.Location = new System.Drawing.Point(140, 20);
             this.userControlReptil.Name = "userControlReptil";
             this.userControlReptil.Size = new System.Drawing.Size(407, 339);

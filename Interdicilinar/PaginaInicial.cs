@@ -78,6 +78,55 @@ namespace Interdicilinar
             leao.Sexo = 'M';
             leao.Nascimento = DateTime.Parse("20/10/2010");
 
+            Lobo lobo = new Lobo();
+            lobo.Nome = "Van Helsing";
+            lobo.Peconhento = false;
+            lobo.Pelos = true;
+            lobo.CorDoPelo = "Cinza";
+            lobo.QuantidadeMamas = 8;
+            lobo.Sexo = 'F';
+            lobo.Nascimento = DateTime.Parse("20/10/2010");
+
+            Morcego morcego = new Morcego();
+            morcego.Nome = "Batman";
+            morcego.Peconhento = false;
+            morcego.Pelos = false;
+            morcego.QuantidadeMamas = 6;
+            morcego.Sexo = 'F';
+            morcego.Nascimento = DateTime.Parse("20/10/2013");
+
+            Ornitorrinco ornitorrinco = new Ornitorrinco();
+            ornitorrinco.Nome = "Perry";
+            ornitorrinco.QuantidadeMamas = 8;
+            ornitorrinco.Sexo = 'F';
+            ornitorrinco.Nascimento = DateTime.Parse("20/10/2010");
+
+           Pato pato = new Pato();
+           pato.Nome = "Donald";
+           pato.Nascimento = DateTime.Parse("01/09/2021");
+           pato.CorPena = "Preto e amarelo";
+           pato.Sexo = 'M';
+           pato.VelocidadeDoVoo = 65;
+           pato.AltitudeMaximaEmMetros = 80;
+
+            Peixe peixe = new Peixe();
+            peixe.Nome = "Nemo";
+            peixe.Nascimento = DateTime.Parse("09/11/1950");
+            peixe.Sexo = 'M';
+
+            Pinguim pinguim = new Pinguim();
+            pinguim.Nome = "Happy Feet";
+            pinguim.Nascimento = DateTime.Parse("20/10/1982");
+            pinguim.CorPena = "Preto";
+            pinguim.Sexo = 'M';
+
+            Pombo pombo = new Pombo();
+            pombo.Nome = "Pombo";
+            pombo.Nascimento = DateTime.Parse("22/09/1975");
+            pombo.CorPena = "Cinza";
+            pombo.Sexo = 'F';
+            pombo.VelocidadeDoVoo = 35;
+            pombo.AltitudeMaximaEmMetros = 100;
 
             Tartaruga tartaruga = new Tartaruga();
             tartaruga.Nome = "Esmeralda";
@@ -88,12 +137,20 @@ namespace Interdicilinar
             tartaruga.TemEscamas = true;
             tartaruga.Carnivoro = true;
 
+
             arvoreBin.Insere(baleia);
             arvoreBin.Insere(cachorro);
             arvoreBin.Insere(coruja);
             arvoreBin.Insere(gato);
             arvoreBin.Insere(gaviao);
             arvoreBin.Insere(leao);
+            arvoreBin.Insere(lobo);
+            arvoreBin.Insere(morcego);
+            arvoreBin.Insere(ornitorrinco);
+            arvoreBin.Insere(pato);
+            arvoreBin.Insere(peixe);
+            arvoreBin.Insere(pinguim);
+            arvoreBin.Insere(pombo);
             arvoreBin.Insere(tartaruga);
 
             animais = UtilExtensions.arvore.ListagemEmOrdem();
@@ -255,11 +312,11 @@ namespace Interdicilinar
             else if (animalAtual is Ornitorrinco)
                 SetImage(@"../../imagens-animais/ornitorrinco/ornitorrinco.jpg");
             else if (animalAtual is Pato)
-                SetImage(@"../../imagens-animais/pato/pato.jpg");
+                SetImage(@"../../imagens-animais/pato/pato.png");
             else if (animalAtual is Peixe)
                 SetImage(@"../../imagens-animais/peixe/peixe.jpg");
-            else if (animalAtual is Pinguin)
-                SetImage(@"../../imagens-animais/pinguim/pinguim.jpg");
+            else if (animalAtual is Pinguim)
+                SetImage(@"../../imagens-animais/pinguim/pinguimCaminhando.jpg");
             else if (animalAtual is Pombo)
                 SetImage(@"../../imagens-animais/pombo/pombo.jpg");
             else if (animalAtual is Tartaruga)
@@ -331,12 +388,12 @@ namespace Interdicilinar
                 DetalhesMamiferos winDetalhesMamiferos = new DetalhesMamiferos();
                 winDetalhesMamiferos.ShowDialog();
             }
-            else if(UtilExtensions.animalAtual is Ave)
+            else if (UtilExtensions.animalAtual is Ave)
             {
                 DetalhesAves winDetalhesAves = new DetalhesAves();
                 winDetalhesAves.ShowDialog();
             }
-            else if(UtilExtensions.animalAtual is Reptil)
+            else if ((UtilExtensions.animalAtual is Reptil) || (UtilExtensions.animalAtual is Peixe))
             {
                 DetalhesRepteis winDetalhesRepteis = new DetalhesRepteis();
                 winDetalhesRepteis.ShowDialog();

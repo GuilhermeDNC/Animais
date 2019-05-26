@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Interdicilinar.Bichos
 {
-    public class Pinguin : Ave, IAquatico,IOviparo
+    public class Pinguim : Ave, IAquatico,IOviparo
     {
 
-        public Pinguin()
+        public Pinguim()
         {
             Peconhento = false;
             Carnivoro = true;

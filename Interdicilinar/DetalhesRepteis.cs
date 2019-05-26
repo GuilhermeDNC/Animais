@@ -24,8 +24,52 @@ namespace Interdicilinar
             userControlDetalhes1.Sexo = animalAtual.Sexo.ToString();
             userControlDetalhes1.Carnivoro = animalAtual.Carnivoro ? "Sim" : "Não";
 
+            lblTemEscamasValor.Text = (animalAtual as Reptil).TemEscamas ? "Sim" : "Não";
+            lblTemCascoValor.Text = (animalAtual as Reptil).TemCasco ? "Sim" : "Não";
+
+            if (!(UtilExtensions.animalAtual is IVoar))
+                btnVoar.Visible = false;
+            if (!(UtilExtensions.animalAtual is IOviparo))
+                gbOviparos.Visible = false;
+            if (!(UtilExtensions.animalAtual is IPredador))
+                btnAtacar.Visible = false;
         }
 
         private Animal animalAtual = UtilExtensions.animalAtual;
+
+        private void btnMovimentar_Click(object sender, EventArgs e)
+        {
+            userControlDetalhes1.Imagem = animalAtual.Movimentar();
+        }
+
+        private void btnComunicar_Click(object sender, EventArgs e)
+        {
+            userControlDetalhes1.Imagem = animalAtual.Comunicar();
+        }
+
+        private void btnAlimentar_Click(object sender, EventArgs e)
+        {
+            userControlDetalhes1.Imagem = animalAtual.Alimentar();
+        }
+
+        private void btnBotar_Click(object sender, EventArgs e)
+        {
+            userControlDetalhes1.Imagem = (animalAtual as IOviparo).Botar();
+        }
+
+        private void btnChocar_Click(object sender, EventArgs e)
+        {
+            userControlDetalhes1.Imagem = (animalAtual as IOviparo).Chocar();
+        }
+
+        private void btnAtacar_Click(object sender, EventArgs e)
+        {
+            userControlDetalhes1.Imagem = (animalAtual as IPredador).Ataque();
+        }
+
+        private void btnVoar_Click(object sender, EventArgs e)
+        {
+            userControlDetalhes1.Imagem = (animalAtual as IVoar).Voar();
+        }
     }
 }
