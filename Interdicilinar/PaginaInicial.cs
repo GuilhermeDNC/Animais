@@ -301,48 +301,52 @@ namespace Interdicilinar
             //bool ave = false;
             //bool mamifero = false;
 
-            animalAtual = animaisAux[lbAnimais.SelectedIndex];
-            UtilExtensions.animalAtual = animalAtual;
+            if (lbAnimais.SelectedIndex >= 0)
+            {
 
-            //if (animalAtual is IVoar)
-            //    voador = true;
-            //if (animalAtual is IPredador)
-            //    predador = true;
-            //if (animalAtual is IOviparo)
-            //    oviparo = true;
-            //if (animalAtual is Ave)
-            //    ave = true;
-            //if (animalAtual is Mamifero)
-            //    mamifero = true;
+                animalAtual = animaisAux[lbAnimais.SelectedIndex];
+                UtilExtensions.animalAtual = animalAtual;
 
-            if (animalAtual is Baleia)
-                SetImage(@"../../imagens-animais/baleia/baleia.jpg");
-            else if (animalAtual is Cachorro)
-                SetImage(@"../../imagens-animais/cachorro/cachorro.jpg");
-            else if (animalAtual is Coruja)
-                SetImage(@"../../imagens-animais/coruja/coruja.jpg");
-            else if (animalAtual is Gato)
-                SetImage(@"../../imagens-animais/gato/gato.jpg");
-            else if (animalAtual is Gaviao)
-                SetImage(@"../../imagens-animais/gaviao/gaviao.jpg");
-            else if (animalAtual is Leao)
-                SetImage(@"../../imagens-animais/leao/leao.jpg");
-            else if (animalAtual is Lobo)
-                SetImage(@"../../imagens-animais/lobo/lobo.jpg");
-            else if (animalAtual is Morcego)
-                SetImage(@"../../imagens-animais/morcego/morcego.jpg");
-            else if (animalAtual is Ornitorrinco)
-                SetImage(@"../../imagens-animais/ornitorrinco/ornitorrinco.jpg");
-            else if (animalAtual is Pato)
-                SetImage(@"../../imagens-animais/pato/pato.png");
-            else if (animalAtual is Peixe)
-                SetImage(@"../../imagens-animais/peixe/peixe.jpg");
-            else if (animalAtual is Pinguim)
-                SetImage(@"../../imagens-animais/pinguim/pinguimCaminhando.jpg");
-            else if (animalAtual is Pombo)
-                SetImage(@"../../imagens-animais/pombo/pombo.jpg");
-            else if (animalAtual is Tartaruga)
-                SetImage(@"../../imagens-animais/tartaruga/tartaruga.jpg");
+                //if (animalAtual is IVoar)
+                //    voador = true;
+                //if (animalAtual is IPredador)
+                //    predador = true;
+                //if (animalAtual is IOviparo)
+                //    oviparo = true;
+                //if (animalAtual is Ave)
+                //    ave = true;
+                //if (animalAtual is Mamifero)
+                //    mamifero = true;
+
+                if (animalAtual is Baleia)
+                    SetImage(@"../../imagens-animais/baleia/baleia.jpg");
+                else if (animalAtual is Cachorro)
+                    SetImage(@"../../imagens-animais/cachorro/cachorro.jpg");
+                else if (animalAtual is Coruja)
+                    SetImage(@"../../imagens-animais/coruja/coruja.jpg");
+                else if (animalAtual is Gato)
+                    SetImage(@"../../imagens-animais/gato/gato.jpg");
+                else if (animalAtual is Gaviao)
+                    SetImage(@"../../imagens-animais/gaviao/gaviao.jpg");
+                else if (animalAtual is Leao)
+                    SetImage(@"../../imagens-animais/leao/leao.jpg");
+                else if (animalAtual is Lobo)
+                    SetImage(@"../../imagens-animais/lobo/lobo.jpg");
+                else if (animalAtual is Morcego)
+                    SetImage(@"../../imagens-animais/morcego/morcego.jpg");
+                else if (animalAtual is Ornitorrinco)
+                    SetImage(@"../../imagens-animais/ornitorrinco/ornitorrinco.jpg");
+                else if (animalAtual is Pato)
+                    SetImage(@"../../imagens-animais/pato/pato.png");
+                else if (animalAtual is Peixe)
+                    SetImage(@"../../imagens-animais/peixe/peixe.jpg");
+                else if (animalAtual is Pinguim)
+                    SetImage(@"../../imagens-animais/pinguim/pinguimCaminhando.jpg");
+                else if (animalAtual is Pombo)
+                    SetImage(@"../../imagens-animais/pombo/pombo.jpg");
+                else if (animalAtual is Tartaruga)
+                    SetImage(@"../../imagens-animais/tartaruga/tartaruga.jpg");
+            }
 
         }
 
