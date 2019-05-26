@@ -74,22 +74,34 @@
     <Compile Include="Cadastrar.Designer.cs">
       <DependentUpon>Cadastrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="DetalhesAves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalhesAves.Designer.cs">
+      <DependentUpon>DetalhesAves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetalhesMamiferos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalhesMamiferos.Designer.cs">
+      <DependentUpon>DetalhesMamiferos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetalhesRepteis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalhesRepteis.Designer.cs">
+      <DependentUpon>DetalhesRepteis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estutura\Arvore\ArvoreBin.cs" />
     <Compile Include="Estutura\Arvore\ComparadorCodigo.cs" />
     <Compile Include="Estutura\Arvore\NodoArv.cs" />
     <Compile Include="Estutura\Lista\List.cs" />
     <Compile Include="Estutura\Lista\NodoLista.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="PaginaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Listar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Listar.Designer.cs">
-      <DependentUpon>Listar.cs</DependentUpon>
+    <Compile Include="PaginaInicial.Designer.cs">
+      <DependentUpon>PaginaInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Logicas\NomeRepetidoException.cs" />
     <Compile Include="Program.cs" />
@@ -106,6 +118,12 @@
     <Compile Include="UserControls\UserControlAve.Designer.cs">
       <DependentUpon>UserControlAve.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\userControlDetalhes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\userControlDetalhes.Designer.cs">
+      <DependentUpon>userControlDetalhes.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UserControlMamiferos.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -116,11 +134,17 @@
     <EmbeddedResource Include="Cadastrar.resx">
       <DependentUpon>Cadastrar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="DetalhesAves.resx">
+      <DependentUpon>DetalhesAves.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Listar.resx">
-      <DependentUpon>Listar.cs</DependentUpon>
+    <EmbeddedResource Include="DetalhesMamiferos.resx">
+      <DependentUpon>DetalhesMamiferos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalhesRepteis.resx">
+      <DependentUpon>DetalhesRepteis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaginaInicial.resx">
+      <DependentUpon>PaginaInicial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -136,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserControlAve.resx">
       <DependentUpon>UserControlAve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\userControlDetalhes.resx">
+      <DependentUpon>userControlDetalhes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserControlMamiferos.resx">
       <DependentUpon>UserControlMamiferos.cs</DependentUpon>

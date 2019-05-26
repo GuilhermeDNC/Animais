@@ -1,4 +1,5 @@
-﻿using Interdicilinar.Estrutura.Arvore;
+﻿using Interdicilinar.Animais;
+using Interdicilinar.Estrutura.Arvore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,7 @@ namespace Interdicilinar
     public static class UtilExtensions
     {
         public static ArvoreBin arvore = new ArvoreBin(new ComparadorCodigo());
+        public static Animal animalAtual;
+        public static string imagemAtual = @"../../imagens-animais/baleia/baleia.jpg";
     }
 }

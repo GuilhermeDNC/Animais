@@ -149,7 +149,7 @@
             this.userControlMamiferos1.Location = new System.Drawing.Point(126, 6);
             this.userControlMamiferos1.Mamas = 2;
             this.userControlMamiferos1.Name = "userControlMamiferos1";
-            this.userControlMamiferos1.Pelos = false;
+            this.userControlMamiferos1.Pelos = true;
             this.userControlMamiferos1.Size = new System.Drawing.Size(415, 259);
             this.userControlMamiferos1.TabIndex = 7;
             // 
@@ -422,6 +422,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Cadastrar";
             this.Text = "Cadastrar";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Cadastrar_FormClosed);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

@@ -15,9 +15,13 @@ namespace Interdicilinar
 {
     public partial class Cadastrar : Form
     {
-        public Cadastrar()
+        private PaginaInicial paginaInicial;
+        public Cadastrar(PaginaInicial paginaInicial)
         {
+
             InitializeComponent();
+            this.paginaInicial = paginaInicial;
+
             btnCadastrarMamiferos.Enabled = false;
 
             //Porque só há essa opção
@@ -118,7 +122,6 @@ namespace Interdicilinar
 
         private void btnCadastrarMamiferos_Click(object sender, EventArgs e)
         {
-
             Mamifero animal;
             try
             {
@@ -263,9 +266,10 @@ namespace Interdicilinar
                 animal.QuantidadeMamas = userControlMamiferos1.Mamas;
 
             animal.Pelos = userControlMamiferos1.Pelos;
-            animal.CorDoPelo = userControlMamiferos1.CorPelo;
-
-            animal.Carnivoro = userControlMamiferos1.Carnivoro;
+            if (animal.Pelos)
+                animal.CorDoPelo = userControlMamiferos1.CorPelo;
+            else
+                animal.CorDoPelo = "";
 
             if (DateTime.TryParse(userControlMamiferos1.Nascimento, out nascimento))
                 animal.Nascimento = nascimento;
@@ -277,7 +281,6 @@ namespace Interdicilinar
             else
                 animal.Nome = userControlMamiferos1.Nome;
 
-            animal.Peconhento = userControlMamiferos1.Peconhento;
             animal.Sexo = userControlMamiferos1.Sexo;
         }
 
@@ -290,9 +293,6 @@ namespace Interdicilinar
             else
                 animal.CorPena = userControlAve1.CorPenas;
 
-            animal.Rapina = userControlAve1.Rapina;
-            animal.Carnivoro = userControlAve1.Carnivoro;
-
             if (DateTime.TryParse(userControlAve1.Nascimento, out nascimento))
                 animal.Nascimento = nascimento;
             else
@@ -303,7 +303,6 @@ namespace Interdicilinar
             else
                 animal.Nome = userControlAve1.Nome;
 
-            animal.Peconhento = userControlAve1.Peconhento;
             animal.Sexo = userControlAve1.Sexo;
         }
 
@@ -318,7 +317,6 @@ namespace Interdicilinar
             {
                 throw new Exception("O valor do campo nome não pode ser nulo...");
             }
-
 
             if (DateTime.TryParse(userControlReptil.TextoNascimento, out nascimento))
                 animal.Nascimento = nascimento;
@@ -344,6 +342,12 @@ namespace Interdicilinar
         private void tabControl1_Selected(object sender, TabControlEventArgs e)
         {
             LimparForm(this);
+        }
+
+        private void Cadastrar_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            paginaInicial.animais = UtilExtensions.arvore.ListagemEmOrdem();
+            paginaInicial.animaisAux = paginaInicial.animais.Listar();
         }
     }
 

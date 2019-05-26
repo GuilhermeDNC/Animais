@@ -127,7 +127,7 @@
             // 
             this.userControlAnimal1.BoolCarnivoro = true;
             this.userControlAnimal1.BoolPeconhento = false;
-            this.userControlAnimal1.BoolSexo = 'F';
+            this.userControlAnimal1.BoolSexo = 'M';
             this.userControlAnimal1.Location = new System.Drawing.Point(0, 0);
             this.userControlAnimal1.Name = "userControlAnimal1";
             this.userControlAnimal1.Size = new System.Drawing.Size(401, 344);

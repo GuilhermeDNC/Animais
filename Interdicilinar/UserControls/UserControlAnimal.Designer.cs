@@ -94,7 +94,6 @@
             this.rbFeminino.TabIndex = 1;
             this.rbFeminino.Text = "Feminino";
             this.rbFeminino.UseVisualStyleBackColor = true;
-            this.rbFeminino.CheckedChanged += new System.EventHandler(this.rbFeminino_CheckedChanged);
             // 
             // rbMasculino
             // 
