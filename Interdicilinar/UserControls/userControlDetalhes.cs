@@ -88,6 +88,5 @@ namespace Interdicilinar.UserControls
                 lblCarnivoro.Text = value;
             }
         }
-
     }
 }

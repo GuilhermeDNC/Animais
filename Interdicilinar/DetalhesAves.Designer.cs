@@ -43,8 +43,10 @@
             this.btnMovimentar = new System.Windows.Forms.Button();
             this.btnAlimentar = new System.Windows.Forms.Button();
             this.bntCiscar = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.gbOviparos.SuspendLayout();
             this.gbComuns.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // userControlDetalhes1
@@ -60,14 +62,14 @@
             this.userControlDetalhes1.Nome = "label5";
             this.userControlDetalhes1.Peconhento = "label11";
             this.userControlDetalhes1.Sexo = "label9";
-            this.userControlDetalhes1.Size = new System.Drawing.Size(442, 508);
+            this.userControlDetalhes1.Size = new System.Drawing.Size(442, 517);
             this.userControlDetalhes1.TabIndex = 0;
             // 
             // lblRapina
             // 
             this.lblRapina.AutoSize = true;
             this.lblRapina.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRapina.Location = new System.Drawing.Point(214, 306);
+            this.lblRapina.Location = new System.Drawing.Point(6, 29);
             this.lblRapina.Name = "lblRapina";
             this.lblRapina.Size = new System.Drawing.Size(80, 26);
             this.lblRapina.TabIndex = 1;
@@ -77,7 +79,7 @@
             // 
             this.lblRapinaValor.AutoSize = true;
             this.lblRapinaValor.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRapinaValor.Location = new System.Drawing.Point(300, 306);
+            this.lblRapinaValor.Location = new System.Drawing.Point(92, 29);
             this.lblRapinaValor.Name = "lblRapinaValor";
             this.lblRapinaValor.Size = new System.Drawing.Size(67, 26);
             this.lblRapinaValor.TabIndex = 2;
@@ -87,7 +89,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(214, 342);
+            this.label1.Location = new System.Drawing.Point(6, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(146, 26);
             this.label1.TabIndex = 3;
@@ -97,7 +99,7 @@
             // 
             this.lblCorPenas.AutoSize = true;
             this.lblCorPenas.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorPenas.Location = new System.Drawing.Point(353, 342);
+            this.lblCorPenas.Location = new System.Drawing.Point(145, 65);
             this.lblCorPenas.Name = "lblCorPenas";
             this.lblCorPenas.Size = new System.Drawing.Size(146, 26);
             this.lblCorPenas.TabIndex = 4;
@@ -211,29 +213,41 @@
             this.bntCiscar.UseVisualStyleBackColor = false;
             this.bntCiscar.Click += new System.EventHandler(this.bntCiscar_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lblRapina);
+            this.groupBox1.Controls.Add(this.lblRapinaValor);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.lblCorPenas);
+            this.groupBox1.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(242, 306);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(294, 100);
+            this.groupBox1.TabIndex = 26;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Aves";
+            // 
             // DetalhesAves
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Peru;
-            this.ClientSize = new System.Drawing.Size(800, 508);
+            this.ClientSize = new System.Drawing.Size(800, 517);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.bntCiscar);
             this.Controls.Add(this.btnAtacar);
             this.Controls.Add(this.btnVoar);
             this.Controls.Add(this.gbOviparos);
             this.Controls.Add(this.gbComuns);
-            this.Controls.Add(this.lblCorPenas);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblRapinaValor);
-            this.Controls.Add(this.lblRapina);
             this.Controls.Add(this.userControlDetalhes1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "DetalhesAves";
             this.Text = "DetalhesAves";
             this.gbOviparos.ResumeLayout(false);
             this.gbComuns.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -254,5 +268,6 @@
         private System.Windows.Forms.Button btnMovimentar;
         private System.Windows.Forms.Button btnAlimentar;
         private System.Windows.Forms.Button bntCiscar;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

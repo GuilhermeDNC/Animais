@@ -42,8 +42,10 @@
             this.lblTemEscamasValor = new System.Windows.Forms.Label();
             this.lblTemCascoValor = new System.Windows.Forms.Label();
             this.lblTemEscamas = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.gbOviparos.SuspendLayout();
             this.gbComuns.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAtacar
@@ -156,14 +158,14 @@
             this.userControlDetalhes1.Nome = "label5";
             this.userControlDetalhes1.Peconhento = "label11";
             this.userControlDetalhes1.Sexo = "label9";
-            this.userControlDetalhes1.Size = new System.Drawing.Size(464, 507);
+            this.userControlDetalhes1.Size = new System.Drawing.Size(464, 517);
             this.userControlDetalhes1.TabIndex = 0;
             // 
             // lblTemCasco
             // 
             this.lblTemCasco.AutoSize = true;
             this.lblTemCasco.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTemCasco.Location = new System.Drawing.Point(217, 305);
+            this.lblTemCasco.Location = new System.Drawing.Point(6, 29);
             this.lblTemCasco.Name = "lblTemCasco";
             this.lblTemCasco.Size = new System.Drawing.Size(115, 26);
             this.lblTemCasco.TabIndex = 29;
@@ -173,7 +175,7 @@
             // 
             this.lblTemEscamasValor.AutoSize = true;
             this.lblTemEscamasValor.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTemEscamasValor.Location = new System.Drawing.Point(349, 342);
+            this.lblTemEscamasValor.Location = new System.Drawing.Point(138, 66);
             this.lblTemEscamasValor.Name = "lblTemEscamasValor";
             this.lblTemEscamasValor.Size = new System.Drawing.Size(115, 26);
             this.lblTemEscamasValor.TabIndex = 30;
@@ -183,7 +185,7 @@
             // 
             this.lblTemCascoValor.AutoSize = true;
             this.lblTemCascoValor.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTemCascoValor.Location = new System.Drawing.Point(338, 305);
+            this.lblTemCascoValor.Location = new System.Drawing.Point(127, 29);
             this.lblTemCascoValor.Name = "lblTemCascoValor";
             this.lblTemCascoValor.Size = new System.Drawing.Size(115, 26);
             this.lblTemCascoValor.TabIndex = 31;
@@ -193,22 +195,33 @@
             // 
             this.lblTemEscamas.AutoSize = true;
             this.lblTemEscamas.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTemEscamas.Location = new System.Drawing.Point(214, 342);
+            this.lblTemEscamas.Location = new System.Drawing.Point(3, 66);
             this.lblTemEscamas.Name = "lblTemEscamas";
             this.lblTemEscamas.Size = new System.Drawing.Size(140, 26);
             this.lblTemEscamas.TabIndex = 32;
             this.lblTemEscamas.Text = "Tem escamas:";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lblTemCasco);
+            this.groupBox1.Controls.Add(this.lblTemEscamas);
+            this.groupBox1.Controls.Add(this.lblTemEscamasValor);
+            this.groupBox1.Controls.Add(this.lblTemCascoValor);
+            this.groupBox1.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(249, 306);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(283, 100);
+            this.groupBox1.TabIndex = 33;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Répteis";
             // 
             // DetalhesRepteis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGreen;
-            this.ClientSize = new System.Drawing.Size(823, 507);
-            this.Controls.Add(this.lblTemEscamas);
-            this.Controls.Add(this.lblTemCascoValor);
-            this.Controls.Add(this.lblTemEscamasValor);
-            this.Controls.Add(this.lblTemCasco);
+            this.ClientSize = new System.Drawing.Size(823, 517);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnAtacar);
             this.Controls.Add(this.btnVoar);
             this.Controls.Add(this.gbOviparos);
@@ -219,8 +232,9 @@
             this.Text = "DetalhesRepteis";
             this.gbOviparos.ResumeLayout(false);
             this.gbComuns.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -240,5 +254,6 @@
         private System.Windows.Forms.Label lblTemEscamasValor;
         private System.Windows.Forms.Label lblTemCascoValor;
         private System.Windows.Forms.Label lblTemEscamas;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

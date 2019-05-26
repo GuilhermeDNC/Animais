@@ -99,6 +99,7 @@ namespace Interdicilinar
             ornitorrinco.Nome = "Perry";
             ornitorrinco.QuantidadeMamas = 8;
             ornitorrinco.Sexo = 'F';
+            ornitorrinco.Pelos = false;
             ornitorrinco.Nascimento = DateTime.Parse("20/10/2010");
 
            Pato pato = new Pato();

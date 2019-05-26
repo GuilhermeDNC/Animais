@@ -45,15 +45,17 @@
             this.btnAtacar = new System.Windows.Forms.Button();
             this.btnAmamentar = new System.Windows.Forms.Button();
             this.userControlDetalhes1 = new Interdicilinar.UserControls.userControlDetalhes();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.gbComuns.SuspendLayout();
             this.gbOviparos.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblPossuiPelo
             // 
             this.lblPossuiPelo.AutoSize = true;
             this.lblPossuiPelo.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPossuiPelo.Location = new System.Drawing.Point(264, 340);
+            this.lblPossuiPelo.Location = new System.Drawing.Point(10, 65);
             this.lblPossuiPelo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPossuiPelo.Name = "lblPossuiPelo";
             this.lblPossuiPelo.Size = new System.Drawing.Size(121, 26);
@@ -64,7 +66,7 @@
             // 
             this.lblMamas.AutoSize = true;
             this.lblMamas.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMamas.Location = new System.Drawing.Point(261, 304);
+            this.lblMamas.Location = new System.Drawing.Point(7, 29);
             this.lblMamas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMamas.Name = "lblMamas";
             this.lblMamas.Size = new System.Drawing.Size(225, 26);
@@ -75,7 +77,7 @@
             // 
             this.lblCorPelo.AutoSize = true;
             this.lblCorPelo.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorPelo.Location = new System.Drawing.Point(264, 377);
+            this.lblCorPelo.Location = new System.Drawing.Point(10, 102);
             this.lblCorPelo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCorPelo.Name = "lblCorPelo";
             this.lblCorPelo.Size = new System.Drawing.Size(123, 26);
@@ -86,7 +88,7 @@
             // 
             this.lblPossuiPeloValor.AutoSize = true;
             this.lblPossuiPeloValor.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPossuiPeloValor.Location = new System.Drawing.Point(393, 340);
+            this.lblPossuiPeloValor.Location = new System.Drawing.Point(139, 65);
             this.lblPossuiPeloValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPossuiPeloValor.Name = "lblPossuiPeloValor";
             this.lblPossuiPeloValor.Size = new System.Drawing.Size(111, 26);
@@ -97,18 +99,17 @@
             // 
             this.lblCorPeloValor.AutoSize = true;
             this.lblCorPeloValor.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorPeloValor.Location = new System.Drawing.Point(405, 377);
+            this.lblCorPeloValor.Location = new System.Drawing.Point(151, 102);
             this.lblCorPeloValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCorPeloValor.Name = "lblCorPeloValor";
-            this.lblCorPeloValor.Size = new System.Drawing.Size(81, 26);
+            this.lblCorPeloValor.Size = new System.Drawing.Size(0, 26);
             this.lblCorPeloValor.TabIndex = 5;
-            this.lblCorPeloValor.Text = "corPelo";
             // 
             // lblMamasValor
             // 
             this.lblMamasValor.AutoSize = true;
             this.lblMamasValor.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMamasValor.Location = new System.Drawing.Point(487, 304);
+            this.lblMamasValor.Location = new System.Drawing.Point(233, 29);
             this.lblMamasValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMamasValor.Name = "lblMamasValor";
             this.lblMamasValor.Size = new System.Drawing.Size(187, 26);
@@ -248,26 +249,37 @@
             this.userControlDetalhes1.Nome = "label5";
             this.userControlDetalhes1.Peconhento = "label11";
             this.userControlDetalhes1.Sexo = "label9";
-            this.userControlDetalhes1.Size = new System.Drawing.Size(486, 476);
+            this.userControlDetalhes1.Size = new System.Drawing.Size(486, 513);
             this.userControlDetalhes1.TabIndex = 24;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lblMamas);
+            this.groupBox1.Controls.Add(this.lblPossuiPelo);
+            this.groupBox1.Controls.Add(this.lblCorPelo);
+            this.groupBox1.Controls.Add(this.lblPossuiPeloValor);
+            this.groupBox1.Controls.Add(this.lblCorPeloValor);
+            this.groupBox1.Controls.Add(this.lblMamasValor);
+            this.groupBox1.Font = new System.Drawing.Font("Open Sans Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(255, 307);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(420, 144);
+            this.groupBox1.TabIndex = 25;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Mamiferos";
             // 
             // DetalhesMamiferos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(977, 476);
+            this.ClientSize = new System.Drawing.Size(977, 513);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnAtacar);
             this.Controls.Add(this.btnVoar);
             this.Controls.Add(this.btnAmamentar);
             this.Controls.Add(this.gbOviparos);
             this.Controls.Add(this.gbComuns);
-            this.Controls.Add(this.lblMamasValor);
-            this.Controls.Add(this.lblCorPeloValor);
-            this.Controls.Add(this.lblPossuiPeloValor);
-            this.Controls.Add(this.lblCorPelo);
-            this.Controls.Add(this.lblMamas);
-            this.Controls.Add(this.lblPossuiPelo);
             this.Controls.Add(this.userControlDetalhes1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -276,8 +288,9 @@
             this.Text = "DetalhesMamiferos";
             this.gbComuns.ResumeLayout(false);
             this.gbOviparos.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -299,5 +312,6 @@
         private System.Windows.Forms.Button btnAtacar;
         private System.Windows.Forms.Button btnAmamentar;
         private UserControls.userControlDetalhes userControlDetalhes1;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

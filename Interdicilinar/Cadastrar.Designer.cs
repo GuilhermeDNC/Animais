@@ -294,7 +294,7 @@
             // lblAltitudeAves
             // 
             this.lblAltitudeAves.AutoSize = true;
-            this.lblAltitudeAves.Location = new System.Drawing.Point(181, 117);
+            this.lblAltitudeAves.Location = new System.Drawing.Point(181, 124);
             this.lblAltitudeAves.Name = "lblAltitudeAves";
             this.lblAltitudeAves.Size = new System.Drawing.Size(45, 13);
             this.lblAltitudeAves.TabIndex = 14;
