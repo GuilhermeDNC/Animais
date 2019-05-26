@@ -132,10 +132,10 @@
             this.rbVoar.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbVoar.Location = new System.Drawing.Point(22, 124);
             this.rbVoar.Name = "rbVoar";
-            this.rbVoar.Size = new System.Drawing.Size(74, 30);
+            this.rbVoar.Size = new System.Drawing.Size(115, 30);
             this.rbVoar.TabIndex = 4;
             this.rbVoar.TabStop = true;
-            this.rbVoar.Text = "Voar";
+            this.rbVoar.Text = "Voadores";
             this.rbVoar.UseVisualStyleBackColor = true;
             this.rbVoar.CheckedChanged += new System.EventHandler(this.rbVoar_CheckedChanged);
             // 
