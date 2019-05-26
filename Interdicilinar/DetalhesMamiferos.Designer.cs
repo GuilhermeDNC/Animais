@@ -91,9 +91,8 @@
             this.lblPossuiPeloValor.Location = new System.Drawing.Point(139, 65);
             this.lblPossuiPeloValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPossuiPeloValor.Name = "lblPossuiPeloValor";
-            this.lblPossuiPeloValor.Size = new System.Drawing.Size(111, 26);
+            this.lblPossuiPeloValor.Size = new System.Drawing.Size(0, 26);
             this.lblPossuiPeloValor.TabIndex = 4;
-            this.lblPossuiPeloValor.Text = "PossuiPelo";
             // 
             // lblCorPeloValor
             // 
@@ -112,9 +111,8 @@
             this.lblMamasValor.Location = new System.Drawing.Point(233, 29);
             this.lblMamasValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMamasValor.Name = "lblMamasValor";
-            this.lblMamasValor.Size = new System.Drawing.Size(187, 26);
+            this.lblMamasValor.Size = new System.Drawing.Size(0, 26);
             this.lblMamasValor.TabIndex = 6;
-            this.lblMamasValor.Text = "QuantidadeMamas";
             // 
             // gbComuns
             // 

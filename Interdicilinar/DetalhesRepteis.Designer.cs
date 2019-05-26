@@ -177,9 +177,8 @@
             this.lblTemEscamasValor.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTemEscamasValor.Location = new System.Drawing.Point(138, 66);
             this.lblTemEscamasValor.Name = "lblTemEscamasValor";
-            this.lblTemEscamasValor.Size = new System.Drawing.Size(115, 26);
+            this.lblTemEscamasValor.Size = new System.Drawing.Size(0, 26);
             this.lblTemEscamasValor.TabIndex = 30;
-            this.lblTemEscamasValor.Text = "Tem Casco:";
             // 
             // lblTemCascoValor
             // 
@@ -187,9 +186,8 @@
             this.lblTemCascoValor.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTemCascoValor.Location = new System.Drawing.Point(127, 29);
             this.lblTemCascoValor.Name = "lblTemCascoValor";
-            this.lblTemCascoValor.Size = new System.Drawing.Size(115, 26);
+            this.lblTemCascoValor.Size = new System.Drawing.Size(0, 26);
             this.lblTemCascoValor.TabIndex = 31;
-            this.lblTemCascoValor.Text = "Tem Casco:";
             // 
             // lblTemEscamas
             // 

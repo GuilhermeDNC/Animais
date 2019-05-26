@@ -81,9 +81,8 @@
             this.lblRapinaValor.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRapinaValor.Location = new System.Drawing.Point(92, 29);
             this.lblRapinaValor.Name = "lblRapinaValor";
-            this.lblRapinaValor.Size = new System.Drawing.Size(67, 26);
+            this.lblRapinaValor.Size = new System.Drawing.Size(0, 26);
             this.lblRapinaValor.TabIndex = 2;
-            this.lblRapinaValor.Text = "label1";
             // 
             // label1
             // 
@@ -101,9 +100,8 @@
             this.lblCorPenas.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorPenas.Location = new System.Drawing.Point(145, 65);
             this.lblCorPenas.Name = "lblCorPenas";
-            this.lblCorPenas.Size = new System.Drawing.Size(146, 26);
+            this.lblCorPenas.Size = new System.Drawing.Size(0, 26);
             this.lblCorPenas.TabIndex = 4;
-            this.lblCorPenas.Text = "Cor das Penas:";
             // 
             // btnAtacar
             // 
