@@ -261,7 +261,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Open Sans Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(276, 305);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(310, 144);
+            this.groupBox1.Size = new System.Drawing.Size(333, 144);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Mamiferos";
