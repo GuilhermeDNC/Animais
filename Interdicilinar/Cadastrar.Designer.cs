@@ -74,7 +74,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(716, 482);
+            this.tabControl1.Size = new System.Drawing.Size(559, 238);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl1_Selected);
             // 
@@ -96,16 +96,16 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(708, 456);
+            this.tabPage1.Size = new System.Drawing.Size(551, 212);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "MAMÍFEROS";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // btnCadastrarMamiferos
             // 
-            this.btnCadastrarMamiferos.Location = new System.Drawing.Point(126, 242);
+            this.btnCadastrarMamiferos.Location = new System.Drawing.Point(366, 134);
             this.btnCadastrarMamiferos.Name = "btnCadastrarMamiferos";
-            this.btnCadastrarMamiferos.Size = new System.Drawing.Size(75, 23);
+            this.btnCadastrarMamiferos.Size = new System.Drawing.Size(114, 23);
             this.btnCadastrarMamiferos.TabIndex = 12;
             this.btnCadastrarMamiferos.Text = "Cadastrar";
             this.btnCadastrarMamiferos.UseVisualStyleBackColor = true;
@@ -149,7 +149,7 @@
             this.userControlMamiferos1.Location = new System.Drawing.Point(126, 6);
             this.userControlMamiferos1.Mamas = 2;
             this.userControlMamiferos1.Name = "userControlMamiferos1";
-            this.userControlMamiferos1.Pelos = false;
+            this.userControlMamiferos1.Pelos = true;
             this.userControlMamiferos1.Size = new System.Drawing.Size(415, 259);
             this.userControlMamiferos1.TabIndex = 7;
             // 
@@ -253,16 +253,16 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(708, 456);
+            this.tabPage2.Size = new System.Drawing.Size(551, 212);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "AVES";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // btnCadastrarAves
             // 
-            this.btnCadastrarAves.Location = new System.Drawing.Point(140, 215);
+            this.btnCadastrarAves.Location = new System.Drawing.Point(366, 140);
             this.btnCadastrarAves.Name = "btnCadastrarAves";
-            this.btnCadastrarAves.Size = new System.Drawing.Size(75, 23);
+            this.btnCadastrarAves.Size = new System.Drawing.Size(123, 23);
             this.btnCadastrarAves.TabIndex = 18;
             this.btnCadastrarAves.Text = "Cadastrar";
             this.btnCadastrarAves.UseVisualStyleBackColor = true;
@@ -294,7 +294,7 @@
             // lblAltitudeAves
             // 
             this.lblAltitudeAves.AutoSize = true;
-            this.lblAltitudeAves.Location = new System.Drawing.Point(181, 117);
+            this.lblAltitudeAves.Location = new System.Drawing.Point(181, 124);
             this.lblAltitudeAves.Name = "lblAltitudeAves";
             this.lblAltitudeAves.Size = new System.Drawing.Size(45, 13);
             this.lblAltitudeAves.TabIndex = 14;
@@ -373,16 +373,16 @@
             this.tabPage3.Controls.Add(this.userControlReptil);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(708, 456);
+            this.tabPage3.Size = new System.Drawing.Size(551, 212);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "RÉPTEIS";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // btnCadastrarRepteis
             // 
-            this.btnCadastrarRepteis.Location = new System.Drawing.Point(197, 128);
+            this.btnCadastrarRepteis.Location = new System.Drawing.Point(172, 106);
             this.btnCadastrarRepteis.Name = "btnCadastrarRepteis";
-            this.btnCadastrarRepteis.Size = new System.Drawing.Size(75, 23);
+            this.btnCadastrarRepteis.Size = new System.Drawing.Size(131, 23);
             this.btnCadastrarRepteis.TabIndex = 17;
             this.btnCadastrarRepteis.Text = "Cadastrar";
             this.btnCadastrarRepteis.UseVisualStyleBackColor = true;
@@ -405,7 +405,7 @@
             // 
             this.userControlReptil.BoolCarnivoro = true;
             this.userControlReptil.BoolPeconhento = false;
-            this.userControlReptil.BoolSexo = 'F';
+            this.userControlReptil.BoolSexo = 'M';
             this.userControlReptil.Location = new System.Drawing.Point(140, 20);
             this.userControlReptil.Name = "userControlReptil";
             this.userControlReptil.Size = new System.Drawing.Size(407, 339);
@@ -417,11 +417,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(716, 482);
+            this.ClientSize = new System.Drawing.Size(559, 238);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Cadastrar";
             this.Text = "Cadastrar";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Cadastrar_FormClosed);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

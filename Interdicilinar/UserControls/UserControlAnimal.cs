@@ -22,7 +22,7 @@ namespace Interdicilinar.UserControls
         {
             InitializeComponent();
 
-            sexo = 'F';
+            sexo = 'M';
             carnivoro = true;
             peconhento = false;
         }
@@ -106,32 +106,7 @@ namespace Interdicilinar.UserControls
                 BoolSexo = 'M';
             else
                 BoolSexo = 'F';
-            //VerificaChecado(rbMasculino, BoolSexo, 'M');
         }
 
-        private void rbFeminino_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rbFeminino.Checked)
-                BoolSexo = 'F';
-            else
-                BoolSexo = 'M';
-
-            //VerificaChecado(rbFeminino, BoolSexo, 'F');
-        }
-
-
-        public void VerificaChecado(RadioButton radio, bool propriedade, bool valor)
-        {
-            if (radio.Checked)
-                propriedade = valor;
-            else
-                propriedade = !valor;
-        }
-
-        public void VerificaChecado(RadioButton radio, char propriedade, char valor)
-        {
-            if (radio.Checked)
-                propriedade = valor;
-        }
     }
 }

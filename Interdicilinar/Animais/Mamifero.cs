@@ -58,7 +58,7 @@ namespace Interdicilinar.Animais
             }
             set
             {
-                if(value == null)
+                if(value == null && Pelos)
                 {
                     throw new Exception("Cor invalida");
                 }

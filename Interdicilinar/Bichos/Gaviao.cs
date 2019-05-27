@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Interdicilinar.Bichos
 {
-    public class Gaviao : Ave, IPredador,IVoar
+    public class Gaviao : Ave, IPredador,IVoar,IOviparo
     {
 
         public Gaviao()
@@ -27,6 +27,16 @@ namespace Interdicilinar.Bichos
         public string Ataque()
         {
             return @"../../imagens-animais/gaviao/gaviaoAtacando.jpg";
+        }
+
+        public string Botar()
+        {
+            return @"../../imagens-animais/gaviao/gaviaoBotando.jpg";
+        }
+
+        public string Chocar()
+        {
+            return @"../../imagens-animais/gaviao/gaviaoChocando.jpg";
         }
 
         public override string Ciscar()
